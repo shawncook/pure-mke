@@ -1,7 +1,20 @@
 @import '../../theme.scss';
+@import '../../mixins.scss';
 
 .search {
   margin-bottom: $spacerStandard;
+
+  label {
+    @include screenreaderOnly;
+  }
+
+  input {
+    @include font-step-up-1;
+    border: none;
+    font: inherit;
+    padding: $spacerStandard;
+    width: calc(100% - #{$spacerStandard * 2});
+  }
 }
 
 .search__list {

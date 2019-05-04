@@ -1,6 +1,5 @@
 import React from 'react';
 import CategoryDetail from './components/categoryDetail';
-import Textsearch from './components/textsearch';
 import data from './data.json';
 import './app.scss';
 import ElasticSearch from './components/elasticSearch/index';
@@ -45,11 +44,9 @@ class App extends React.Component {
       <div
         className="app"
       >
-        <ElasticSearch />
         {! activeCategory && (
-          <Textsearch
+          <ElasticSearch
             onChange={this.onChange}
-            searchKeyword={searchKeyword}
           />
         )}
         {searchKeyword && (
