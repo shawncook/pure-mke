@@ -7,6 +7,3 @@ Requirements:
 - PHP 5.6.38
 - Node 6.12.0
 - NPM 3.10.10
-
-Installation:
-- 
