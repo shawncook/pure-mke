@@ -11,7 +11,6 @@ export default class Textsearch extends React.PureComponent {
   render() {
     const {
       onChange,
-      searchKeyword,
     } = this.props;
     return (
       <div className="textsearch">

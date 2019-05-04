@@ -4,43 +4,43 @@
       "id": 1,
       "name": "Plastic",
       "slug": "plastic",
-      "desc": ""
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas qui, laudantium, nemo eius dolore itaque, molestiae dignissimos blanditiis tempore porro consequuntur molestias veritatis enim assumenda numquam ab fuga illum eum."
     },
     {
       "id": 2,
       "name": "Metal",
       "slug": "metal",
-      "desc": ""
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nobis sapiente dolorem nam in, doloribus. Ipsa veritatis, beatae velit quas blanditiis reiciendis, exercitationem autem perspiciatis corporis quod eos harum dolores."
     },
     {
       "id": 3,
       "name": "Glass",
       "slug": "glass",
-      "desc": ""
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem sequi, fuga tenetur praesentium totam ullam officiis voluptatibus autem cupiditate. Aspernatur commodi adipisci laborum, quibusdam voluptate! Dolorum molestias amet, id voluptas."
     },
     {
       "id": 4,
       "name": "Paper",
       "slug": "paper",
-      "desc": ""
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cupiditate voluptatem natus iusto quae mollitia? Magni omnis nobis, ipsam, sunt error assumenda dolore. Distinctio beatae quam, architecto vero aliquid quia?"
     },
     {
       "id": 5,
       "name": "Cardboard",
       "slug": "cardboard",
-      "desc": ""
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat dolorum dolorem doloremque nihil. Quia consequuntur et ducimus incidunt, cumque eveniet laudantium veniam quisquam suscipit, maiores porro quae placeat accusamus."
     },
     {
       "id": 6,
       "name": "Electronic",
       "slug": "electronic",
-      "desc": ""
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta, iure facilis natus tempore officia eos, reprehenderit cumque optio quisquam. Perferendis beatae at minima deleniti pariatur fugiat doloremque itaque, hic!"
     },
     {
       "id": 7,
       "name": "Other",
       "slug": "other",
-      "desc": ""
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sit, exercitationem perferendis consequatur illum voluptate soluta eos velit ipsum. Dolores voluptas animi, architecto autem sed ab quo eos explicabo ipsam."
     }
   ],
   "recyclables": [
