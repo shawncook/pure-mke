@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import data from './data.json';
 import './App.css';
 
 function App() {
+  const recyclables = data.recyclables;
+  const categories = data.categories;
+  console.log(recyclables);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul className="App__header">
+        {categories.forEach((item) => {
+          console.log(item.name);
+          return (
+            <li key={item}>
+              {item.name}
+            </li>
+          );
+        })}
+        {recyclables.forEach((item) => {
+          console.log(item.name);
+          return (
+            <li key={item}>
+              {item.name}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
