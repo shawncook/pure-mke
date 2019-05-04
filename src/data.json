@@ -1,0 +1,88 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Plastic",
+      "slug": "plastic",
+      "desc": ""
+    },
+    {
+      "id": 2,
+      "name": "Metal",
+      "slug": "metal",
+      "desc": ""
+    },
+    {
+      "id": 3,
+      "name": "Glass",
+      "slug": "glass",
+      "desc": ""
+    },
+    {
+      "id": 4,
+      "name": "Paper",
+      "slug": "paper",
+      "desc": ""
+    },
+    {
+      "id": 5,
+      "name": "Cardboard",
+      "slug": "cardboard",
+      "desc": ""
+    },
+    {
+      "id": 6,
+      "name": "Electronic",
+      "slug": "electronic",
+      "desc": ""
+    },
+    {
+      "id": 7,
+      "name": "Other",
+      "slug": "other",
+      "desc": ""
+    }
+  ],
+  "recyclables": [
+    {
+      "name": "Bottle",
+      "is_recyclable": true,
+      "desc": "Yes it's recyclable and here's why!",
+      "categories": [
+        "plastic",
+        "glass"
+      ],
+      "tags": [
+        "water",
+        "clear",
+        "drinking"
+      ]
+    },
+    {
+      "name": "Magazines",
+      "is_recyclable": false,
+      "desc": "No, you can't recycle this. Sorry!",
+      "categories": [
+        "paper"
+      ],
+      "tags": [
+        "staples",
+        "subscription"
+      ]
+    },
+    {
+      "name": "Battery",
+      "is_recyclable": true,
+      "desc": "Car or phone battery?! Sure!",
+      "categories": [
+        "electronic",
+        "other"
+      ],
+      "tags": [
+        "car",
+        "phone",
+        "alkaline"
+      ]
+    }
+  ]
+}
