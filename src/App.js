@@ -5,27 +5,32 @@ import './App.css';
 function App() {
   const recyclables = data.recyclables;
   const categories = data.categories;
-  console.log(recyclables);
   return (
     <div className="App">
-      <ul className="App__header">
-        {categories.forEach((item) => {
-          console.log(item.name);
-          return (
-            <li key={item}>
-              {item.name}
-            </li>
-          );
-        })}
-        {recyclables.forEach((item) => {
-          console.log(item.name);
-          return (
-            <li key={item}>
-              {item.name}
-            </li>
-          );
-        })}
-      </ul>
+      {0 < categories.length && (
+        <ul className="app__categories">
+          {categories.forEach((item) => {
+            console.log(item.name);
+            return (
+              <li key={item}>
+                {item.name}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+      {0 < recyclables.length && (
+        <ul className="app__recyclables">
+          {recyclables.forEach((item) => {
+            console.log(item.name);
+            return (
+              <li key={item}>
+                {item.name}
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 }
