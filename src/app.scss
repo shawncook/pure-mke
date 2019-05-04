@@ -1,4 +1,5 @@
 @import './theme.scss';
+@import './mixins.scss';
 
 body {
   background: $colorBackground;
@@ -6,6 +7,7 @@ body {
 }
 
 .app {
+  @include font-base;
   margin: 1em auto;
   max-width: $siteWidth;
 }
@@ -29,7 +31,12 @@ body {
 .app__category {
   background: $colorWhite;
   cursor: pointer;
-  flex-basis: calc(50% - #{$spacerStandard});
+  flex-basis: calc((100% / 2) - #{$spacerStandard / 2});
   list-style: none;
   margin-bottom: 1em;
+}
+
+.app__category-wrapper {
+  padding: $spacerStandard;
+  width: 100%
 }

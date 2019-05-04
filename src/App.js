@@ -66,7 +66,9 @@ class App extends React.Component {
                   key={item.name}
                   onClick={() => this.onCategoryClick(item)}
                 >
-                  <h1>{item.name}</h1>
+                  <div className="app__category-wrapper">
+                    {item.name}
+                  </div>
                 </li>
               );
             })}

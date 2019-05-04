@@ -18,6 +18,7 @@ export default class Textsearch extends React.PureComponent {
           Search
         </label>
         <input
+          placeholder="Search for items to recycle..."
           id="textsearch"
           onChange={(value) => onChange(value)}
         />

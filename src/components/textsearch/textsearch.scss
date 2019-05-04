@@ -1,10 +1,18 @@
 @import '../../theme.scss';
+@import '../../mixins.scss';
 
 .textsearch {
   margin-bottom: $spacerStandard;
 
+  label {
+    @include screenreaderOnly;
+  }
+
   input {
+    @include font-step-up-1;
+    border: none;
     font: inherit;
-    font-size: 18px;
+    padding: $spacerStandard;
+    width: calc(100% - #{$spacerStandard * 2});
   }
 }
