@@ -7,3 +7,6 @@ Requirements:
 - PHP 5.6.38
 - Node 6.12.0
 - NPM 3.10.10
+
+Run the app locally using `php -S localhost:8000`.
+The app will be available in your browser at localhost:8080!
