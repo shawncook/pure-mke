@@ -1,7 +1,7 @@
 import React from 'react';
 import Textsearch from './components/textsearch';
 import data from './data.json';
-import './App.css';
+import './app.scss';
 
 class App extends React.Component {
   constructor() {
@@ -9,18 +9,34 @@ class App extends React.Component {
     this.state = {
       searchKeyword: '',
     };
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange(event) {
+    this.setState({
+      searchKeyword: event.target.value,
+    });
   }
 
   render() {
+    const {
+      searchKeyword,
+    } = this.state;
     const recyclables = data.recyclables;
     const categories = data.categories;
     return (
       <div
-        className="App"
+        className="app"
       >
         <Textsearch
-          searchKeyword={this.state.searchKeyword}
+          onChange={this.onChange}
+          searchKeyword={searchKeyword}
         />
+        {searchKeyword && (
+          <span className="app__results">
+            {`Results for ${searchKeyword}`}
+          </span>
+        )}
         {0 < categories.length && (
           <ul
             className="app__categories"
@@ -28,9 +44,11 @@ class App extends React.Component {
             {categories.map((item) => {
               return (
                 <li
-                  key={item}
+                  className="app__category"
+                  key={item.name}
                 >
-                  {item.name}
+                  <h1>{item.name}</h1>
+                  <div>{item.desc}</div>
                 </li>
               );
             })}
@@ -43,9 +61,11 @@ class App extends React.Component {
             {recyclables.map((item) => {
               return (
                 <li
-                  key={item}
+                  className="app__recyclable"
+                  key={item.name}
                 >
-                  {item.name}
+                  <h1>{item.name}</h1>
+                  <div>{item.desc}</div>
                 </li>
               );
             })}

@@ -1,0 +1,35 @@
+@import './theme.scss';
+
+body {
+  background: $colorBackground;
+  color: $colorTextBody;
+}
+
+.app {
+  margin: 1em auto;
+  max-width: $siteWidth;
+}
+
+.app__results {
+  font-weight: 700;
+}
+
+.app__recyclable {
+  list-style: none;
+}
+
+.app__categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.app__category {
+  background: $colorWhite;
+  cursor: pointer;
+  flex-basis: calc(50% - #{$spacerStandard});
+  list-style: none;
+  margin-bottom: 1em;
+}

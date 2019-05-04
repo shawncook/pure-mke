@@ -10,16 +10,17 @@ export default class Textsearch extends React.PureComponent {
    */
   render() {
     const {
+      onChange,
       searchKeyword,
     } = this.props;
     return (
       <div className="textsearch">
-        <label for="textsearch">
+        <label htmlFor="textsearch">
           Search
         </label>
         <input
           id="textsearch"
-          value={searchKeyword}
+          onChange={(value) => onChange(value)}
         />
       </div>
     );

@@ -1,3 +1,10 @@
+@import '../../theme.scss';
+
 .textsearch {
-  border: 1px solid red;
+  margin-bottom: $spacerStandard;
+
+  input {
+    font: inherit;
+    font-size: 18px;
+  }
 }
