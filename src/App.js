@@ -1,35 +1,90 @@
 import React from 'react';
+import CategoryDetail from './components/categoryDetail';
+import Textsearch from './components/textsearch';
 import data from './data.json';
-import './App.css';
-import ElasticSearch from './components/elasticSearch/index.js';
+import './app.scss';
+import ElasticSearch from './components/elasticSearch/index';
 
-function App() {
-  const recyclables = data.recyclables;
-  const categories = data.categories;
-  console.log(recyclables);
-  return (
-    <div className="App">
-      <ElasticSearch />
-      <ul className="App__header">
-        {categories.forEach((item) => {
-          console.log(item.name);
-          return (
-            <li key={item}>
-              {item.name}
-            </li>
-          );
-        })}
-        {recyclables.forEach((item) => {
-          console.log(item.name);
-          return (
-            <li key={item}>
-              {item.name}
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      activeCategory: false,
+      searchKeyword: '',
+    };
+    this.onCategoryClick = this.onCategoryClick.bind(this);
+    this.onCloseCategory = this.onCloseCategory.bind(this);
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onCategoryClick(category) {
+    this.setState({
+      activeCategory: category,
+    });
+  }
+
+  onCloseCategory() {
+    this.setState({
+      activeCategory: false,
+    });
+  }
+
+  onChange(event) {
+    this.setState({
+      searchKeyword: event.target.value,
+    });
+  }
+
+  render() {
+    const {
+      activeCategory,
+      searchKeyword,
+    } = this.state;
+    const categories = data.categories;
+    return (
+      <div
+        className="app"
+      >
+        <ElasticSearch />
+        {! activeCategory && (
+          <Textsearch
+            onChange={this.onChange}
+            searchKeyword={searchKeyword}
+          />
+        )}
+        {searchKeyword && (
+          <span className="app__results">
+            {`Results for ${searchKeyword}`}
+          </span>
+        )}
+        {! activeCategory && 0 < categories.length && (
+          <ul
+            className="app__categories"
+          >
+            {categories.map((item) => {
+              return (
+                <li
+                  className="app__category"
+                  key={item.name}
+                  onClick={() => this.onCategoryClick(item)}
+                >
+                  <div className="app__category-wrapper">
+                    {item.name}
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+        {activeCategory && (
+          <CategoryDetail
+            category={activeCategory}
+            onCloseCategory={this.onCloseCategory}
+          />
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;

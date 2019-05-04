@@ -1,0 +1,42 @@
+@import './theme.scss';
+@import './mixins.scss';
+
+body {
+  background: $colorBackground;
+  color: $colorTextBody;
+}
+
+.app {
+  @include font-base;
+  margin: 1em auto;
+  max-width: $siteWidth;
+}
+
+.app__results {
+  font-weight: 700;
+}
+
+.app__recyclable {
+  list-style: none;
+}
+
+.app__categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.app__category {
+  background: $colorWhite;
+  cursor: pointer;
+  flex-basis: calc((100% / 2) - #{$spacerStandard / 2});
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.app__category-wrapper {
+  padding: $spacerStandard;
+  width: 100%
+}
