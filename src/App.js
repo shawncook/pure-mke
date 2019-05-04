@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./components/home/index";
 import Header from "./components/header/index";
 import Footer from "./components/footer.js/index";
+import Bottle from "./components/recyclables/bottle";
 
 class App extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/bottle" component={Bottle} />
         </Switch>
         <Footer />
       </>
