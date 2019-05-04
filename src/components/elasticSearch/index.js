@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import {
   ReactiveBase,
   DataSearch,
-  CategorySearch,
-  ResultCard
 } from '@appbaseio/reactivesearch';
 import './search.scss';
 
-class ElasticSearch extends React.Component {
+class ElasticSearch extends Component {
   render() {
     return (
       <div className="search">
@@ -36,6 +34,7 @@ class ElasticSearch extends React.Component {
                     <li
                       key={element.value}
                       className="search__item"
+                      onClick={() => this.props.onClick(element.source.name)}
                     >
                       <span
                         className="search__item-title"
