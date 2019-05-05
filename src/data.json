@@ -4,43 +4,52 @@
       "id": 1,
       "name": "Plastic",
       "slug": "plastic",
-      "desc": "<p>To determine the type of plastic, look at the bottom of the container for a number inside the triangle recycling symbol. Please rinse containers and remove lids.</p><h2>#1 PETE Plastic</h2><p><b>YES:</b> #1 plastic containers (eg. soda and water bottles).</p><p><b>NO:</b> Plastic bags, plastics #2, 3, 4, 5, 6, and 7, polystyrene (Styrofoam), or any unlabeled plastic.</p><h2> Clear #2 HDPE Plastic</h2><p><b>YES:</b> #2 clear plastic containers (eg. milk and juice jugs).</p><p><b>NO:</b> Plastic bags, plastics #1, 3, 4, 5, 6, and 7, polystyrene (Styrofoam), or any unlabeled plastic.</p><h2> Colored #2 HDPE Plastic and Plastics #3 - #7 </h2> <p><b>YES:</b> White or colored plastics labeled #2 HDPE (eg. laundry detergent bottles), plastic bottles and containers labeled #3 (V), #4 (LDPE), #5 (PP), #6 (PS), and #7 (Other).</p><p><b>NO:</b> Plastic bags, expanded polystyrene (aka Styrofoam), or any unlabeled plastic.</p><h2>Plastic Bags</h2><p><b>YES:</b> Clean plastic grocery or merchandise bags, dry cleaning bags, and bubble wrap.</p><b>NO:</b> Foam, rigid containers, paper, food or liquids, polystyrene packaging, strapping, or twine.</p>"
+      "desc": "<p>To determine the type of plastic, look at the bottom of the container for a number inside the triangle recycling symbol. Please rinse containers and remove lids.</p><h2>#1 PETE Plastic</h2><p><b>YES:</b> #1 plastic containers (eg. soda and water bottles).</p><p><b>NO:</b> Plastic bags, plastics #2, 3, 4, 5, 6, and 7, polystyrene (Styrofoam), or any unlabeled plastic.</p><h2> Clear #2 HDPE Plastic</h2><p><b>YES:</b> #2 clear plastic containers (eg. milk and juice jugs).</p><p><b>NO:</b> Plastic bags, plastics #1, 3, 4, 5, 6, and 7, polystyrene (Styrofoam), or any unlabeled plastic.</p><h2> Colored #2 HDPE Plastic and Plastics #3 - #7 </h2> <p><b>YES:</b> White or colored plastics labeled #2 HDPE (eg. laundry detergent bottles), plastic bottles and containers labeled #3 (V), #4 (LDPE), #5 (PP), #6 (PS), and #7 (Other).</p><p><b>NO:</b> Plastic bags, expanded polystyrene (aka Styrofoam), or any unlabeled plastic.</p><h2>Plastic Bags</h2><p><b>YES:</b> Clean plastic grocery or merchandise bags, dry cleaning bags, and bubble wrap.</p><b>NO:</b> Foam, rigid containers, paper, food or liquids, polystyrene packaging, strapping, or twine.</p>",
+      "location":["bags","curbside","dropOff","localBin"]
     },
     {
       "id": 2,
       "name": "Metal",
       "slug": "metal",
-      "desc": "<h2>Aluminum Cans</h2><p><b>YES:</b> All aluminum cans.</p><p><b>NO:</b> Aluminum foil, scrap aluminum, tin cans</p><h2>Aluminum Foil</h2><p><b>YES:</b> Aluminum foil, pie plates. Please rinse.</p><p><b> NO:</b> No foiled lined bags i.e. potato chip bags, aluminum cans, tin cans, scrap metal.</p> <h2>Tin Cans and Scrap Metal<h2> <p><b>YES:</b> Tin Cans, scrap aluminum, brass, copper, steel, small appliances.</p> <p><b>NO:</b> Hazardous materials, non-metal products (plastic, rubber), large appliances or items that contain freon</p>"
+      "desc": "<h2>Aluminum Cans</h2><p><b>YES:</b> All aluminum cans.</p><p><b>NO:</b> Aluminum foil, scrap aluminum, tin cans</p><h2>Aluminum Foil</h2><p><b>YES:</b> Aluminum foil, pie plates. Please rinse.</p><p><b> NO:</b> No foiled lined bags i.e. potato chip bags, aluminum cans, tin cans, scrap metal.</p> <h2>Tin Cans and Scrap Metal<h2> <p><b>YES:</b> Tin Cans, scrap aluminum, brass, copper, steel, small appliances.</p> <p><b>NO:</b> Hazardous materials, non-metal products (plastic, rubber), large appliances or items that contain freon</p>",
+      "location":["dropOff","curbside","localBin"]
+
+      
     },
     {
       "id": 3,
       "name": "Glass",
       "slug": "glass",
-      "desc": "<h2>Clear Glass</h2> <p><b>YES:</b> All clear jars and bottles.</p><p><b> NO:</b> Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Brown Glass</p> YES: All brown jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Green and Blue Glass YES: All green and blue jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues!"
+      "desc": "<h2>Clear Glass</h2> <p><b>YES:</b> All clear jars and bottles.</p><p><b> NO:</b> Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Brown Glass</p> YES: All brown jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Green and Blue Glass YES: All green and blue jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues!",
+      "location":["curbside","dropOff","localBin"]
     },
     {
       "id": 4,
       "name": "Paper",
       "slug": "paper",
-      "desc": "Corrugated Cardboard YES: Corrugated cardboard (with wavy piece in the middle) and brown paper bags. NO: File folders, pizza or donut boxes, paper board (eg. cereal boxes), waxy or plasticized paperboard. Magazines YES: Magazines and catalogs. NO: Colored paper, mixed paper, paper bags, TV guides. Mixed Paper YES: All Paper including junk mail, phone books, white paper, computer paper, colored paper, shredded paper, hard and soft backed books, aseptic containers (juice and milk cartons and soy milk containers, and drink boxes), and newspapers and magazines. NO: Food contaminated paper like pizza or donut boxes, corrugated cardboard, waxy or plasticized paperboard. Newspaper YES: Newspaper and newspaper inserts. NO: Magazines, mixed paper, paper bags, phone books."
+      "desc": "Corrugated Cardboard YES: Corrugated cardboard (with wavy piece in the middle) and brown paper bags. NO: File folders, pizza or donut boxes, paper board (eg. cereal boxes), waxy or plasticized paperboard. Magazines YES: Magazines and catalogs. NO: Colored paper, mixed paper, paper bags, TV guides. Mixed Paper YES: All Paper including junk mail, phone books, white paper, computer paper, colored paper, shredded paper, hard and soft backed books, aseptic containers (juice and milk cartons and soy milk containers, and drink boxes), and newspapers and magazines. NO: Food contaminated paper like pizza or donut boxes, corrugated cardboard, waxy or plasticized paperboard. Newspaper YES: Newspaper and newspaper inserts. NO: Magazines, mixed paper, paper bags, phone books.",
+      "location":["curbside","localBin","dropOff"]
     },
     {
       "id": 5,
       "name": "Cardboard",
       "slug": "cardboard",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat dolorum dolorem doloremque nihil. Quia consequuntur et ducimus incidunt, cumque eveniet laudantium veniam quisquam suscipit, maiores porro quae placeat accusamus."
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repellat dolorum dolorem doloremque nihil. Quia consequuntur et ducimus incidunt, cumque eveniet laudantium veniam quisquam suscipit, maiores porro quae placeat accusamus.",
+      "location":["curbside","dropOff"]
     },
     {
       "id": 6,
       "name": "Electronic",
       "slug": "electronic",
-      "desc": "Electronics typically cannot be recycled at curbside pickup. Depending on what the item is, it can be taken to a drop off location or certain retailers like best buy offer electronic waste recycling and disposal"
+      "desc": "Electronics typically cannot be recycled at curbside pickup. Depending on what the item is, it can be taken to a drop off location or certain retailers like best buy offer electronic waste recycling and disposal",
+      "location":["dropOff","retail"]
     },
     {
       "id": 7,
       "name": "Other",
       "slug": "other",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sit, exercitationem perferendis consequatur illum voluptate soluta eos velit ipsum. Dolores voluptas animi, architecto autem sed ab quo eos explicabo ipsam."
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sit, exercitationem perferendis consequatur illum voluptate soluta eos velit ipsum. Dolores voluptas animi, architecto autem sed ab quo eos explicabo ipsam.",
+      "location":[]
     }
   ],
   "recyclables": [
