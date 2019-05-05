@@ -37,8 +37,8 @@
     },
     {
       "id": 6,
-      "name": "Electronic",
-      "slug": "electronic",
+      "name": "Electronics",
+      "slug": "electronics",
       "desc": "Electronics typically cannot be recycled at curbside pickup. Depending on what the item is, it can be taken to a drop off location or certain retailers like best buy offer electronic waste recycling and disposal",
       "location":["dropOff","retail"]
     },
