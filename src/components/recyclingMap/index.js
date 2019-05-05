@@ -35,7 +35,6 @@ class RecyclingMap extends Component {
   };
 
   render() {
-    console.log(icons);
     return (
       this.props.coords && (
         <>
