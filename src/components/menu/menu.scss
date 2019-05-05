@@ -3,21 +3,26 @@
 
 .app__menu {
   color: $colorWhite;
-  max-width: 500px;
+  max-width: $siteWidth;
   position: relative;
 
   a {
+    background-color: $colorBackgroundMenu;
     color: inherit;
     display: block;
     padding: $spacerStandard / 2;
+    position: relative;
+    transition: background-color 0.08s ease-in-out;
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      background-color: rgba(lighten($colorBackgroundMenu, 10%), 1);
+      border-radius: 4px;
+      text-decoration: none;
     }
   }
 
-  > div {
+  + div {
     height: 0;
   }
 }
@@ -36,6 +41,13 @@
   }
 }
 
+.bm-item {
+  @include font-step-up-2;
+  font-weight: 600;
+  position: relative;
+  z-index: 3;
+}
+
 .bm-burger-bars {
   background: $colorWhite;
   border-radius: 3px;
@@ -43,7 +55,24 @@
 }
 
 .bm-menu {
-  background: $colorMenuBackground;
+  background-color: $colorBackgroundMenu;
+  background-position: center bottom;
+  background-repeat: no-repeat;
   font-size: 1.15em;
   padding: 2.5em 1.5em 0;
+  position: relative;
+
+  button.bm-item {
+    background: transparent;
+    border: 0;
+    position: absolute;
+    left: $spacerStandard / 4;
+    top: $spacerStandard / 2;
+
+    svg {
+      display: block;
+      height: 20px;
+      width: 20px;
+    }
+  }
 }
