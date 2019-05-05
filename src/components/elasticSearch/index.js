@@ -13,6 +13,12 @@ class ElasticSearch extends Component {
     this._isMounted = false;
   }
 
+  // c/o https://stackoverflow.com/a/29897112
+  boldString = (str, find) => {
+    var re = new RegExp(find, "gi");
+    return { __html: str.replace(re, `<strong>${find}</strong>`) };
+  };
+
   render() {
     return (
       <div className="search">
@@ -27,24 +33,36 @@ class ElasticSearch extends Component {
             render={({
               //loading, // `true` means the query is still in progress
               //error, // error info
-              data // parsed suggestions by Reactivesearch
+              data, // parsed suggestions by Reactivesearch
               //rawData, // unmodified suggestions from Elasticsearch
-              //value, // the current value in the search
+              value // the current value in the search
               //downshiftProps // downshift props
-            }) => (
-              <ul className="search__list">
-                {data.map(element => (
-                  <li key={element.value} className="search__item">
-                    <Link to={`/${element.source.name.toLowerCase()}`}>
-                      <span className="search__item-title">
-                        {element.source.name}
-                      </span>
-                      {element.value}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
+            }) => {
+              {
+                const uniqueData = [...new Set(data)];
+
+                return (
+                  <ul className="search__list">
+                    {uniqueData.map(element => (
+                      <li key={element.value} className="search__item">
+                        <Link to={`/${element.source.name.toLowerCase()}`}>
+                          <span className="search__item-title">
+                            {element.source.name}
+                          </span>
+                          &nbsp;-&nbsp;
+                          <span
+                            dangerouslySetInnerHTML={this.boldString(
+                              element.value,
+                              value.trim()
+                            )}
+                          />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                );
+              }
+            }}
           />
         </ReactiveBase>
       </div>
