@@ -9,15 +9,14 @@
     {
       "id": 2,
       "name": "Metal",
-      "slug": "metal", 
+      "slug": "metal",
       "desc": "<h2>Aluminum Cans</h2><p><b>YES:</b> All aluminum cans.</p><p><b>NO:</b> Aluminum foil, scrap aluminum, tin cans</p><h2>Aluminum Foil</h2><p><b>YES:</b> Aluminum foil, pie plates. Please rinse.</p><p><b> NO:</b> No foiled lined bags i.e. potato chip bags, aluminum cans, tin cans, scrap metal.</p> <h2>Tin Cans and Scrap Metal<h2> <p><b>YES:</b> Tin Cans, scrap aluminum, brass, copper, steel, small appliances.</p> <p><b>NO:</b> Hazardous materials, non-metal products (plastic, rubber), large appliances or items that contain freon</p>"
     },
     {
       "id": 3,
       "name": "Glass",
       "slug": "glass",
-      "desc": "Clear Glass YES: All clear jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Brown Glass YES: All brown jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Green and Blue Glass YES: All green and blue jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues!"
-    
+      "desc": "<h2>Clear Glass</h2> <p><b>YES:</b> All clear jars and bottles.</p><p><b> NO:</b> Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Brown Glass</p> YES: All brown jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Green and Blue Glass YES: All green and blue jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues!"
     },
     {
       "id": 4,
@@ -49,7 +48,7 @@
       "name": "Bottle",
       "is_recyclable": true,
       "desc": "Bottles are commonly plastic or glass and are recycleable.",
-      "body": "Bottles are commonly plastic or glass. They can be recycled in common recycling bins or with your regular recycling pick up. Leave lids on because plastic lids and caps are small and might get mixed in with the wrong material in the sorting process if they are not attached to the larger bottle. Leave labels on In the early days of recycling, labels were a problem, but this is no longer the case.",
+      "body": "<div> <div>Bottles are commonly<span style='color: #339966;'><a style='color: #339966;' href='/components/categories/plastic'>plastic</a></span> or <span style='color: #339966;''><a style='color: #339966;' href='/components/categories/glass'>glass</a>.</span></div><div>They can be recycled in common recycling bins or with your <span style='color: #339966;'><a style='color: #339966;' href='##'>regular recycling pick up</a>.</span></div><div>&nbsp;</div> <div><strong>Leave lids on </strong></div><div>Because plastic lids and caps are small and might get mixed in with the wrong material in the sorting process if they are not attached to the larger bottle.</div><div>&nbsp;</div><div><strong>Leave labels on </strong></div><div>In the early days of recycling, labels were a problem, but this is no longer the case.</div> </div>",
       "categories": [
         "plastic",
         "glass"
@@ -88,14 +87,14 @@
       ]
     },
     {
-      "name":"Oil",
+      "name": "Oil",
       "is_recyclable": true,
       "desc": "Motor Oil and Cooking oil",
       "body": "Motor Oil Motor oil and filters can be recycled when taken to a drop off center.  Do not throw these items in the garbage or recycling cart. Cooking Oil Can be recycled at drop off centers. Cooking oil can be thrown away in your garbage cart, but we suggest recycling it. ",
       "categories": [
         "other"
       ],
-      "tags":[
+      "tags": [
         "car",
         "automobile",
         "cooking",
@@ -108,7 +107,9 @@
       "is_recyclable": true,
       "desc": "Plastic bags and other plastic films",
       "body": "The City of Milwaukee does not accept plastic bags through its curbside recycling program. However Plastic Bags can be recycled at certain retail locations like Kohl’s, Pick n Save, Walmart, and Target. Accepted materials at such locations include plastic grocery bags, deflated packing pillows, produce bags, plastic wrap used to package toilet paper or paper towel, dry cleaning bags, and more! For a complete list of locations and information visit plasticfilmrecycling.org",
-      "categories": ["plastic"],
+      "categories": [
+        "plastic"
+      ],
       "tags": [
         "plastic",
         "bag",
@@ -118,103 +119,114 @@
         "shopping",
         "packaging",
         "katy perry"
-      ]    
+      ]
     },
     {
       "name": "Coffee Cup",
       "is_recyclable": false,
       "desc": "To go Coffee Cups",
       "body": "Coffee cups are usually constucted from paper and plastic Paper cups are not recycleable and must be thrown in the garbage. However, the lids on coffee cups can often be recycled. If the lid is white plastic and/or printed with plastic #6 recycling symbol it can be recycled. The cardboard sleeves can also be recycled. Bummed that your cup can’t be recycled? Bring your own mug or thermos! Not only is it more environmentally friendly, but coffee shops often give a discount. ",
-      "categories":[
+      "categories": [
         "paper",
         "plastic"
       ],
-      "tags":[
+      "tags": [
         "drink",
         "tea",
         "paper cup"
-      ]
+      ],
+      "location"
     },
     {
-      "name":"cans",
+      "name": "cans",
       "is_recycleable": true,
       "desc": "Aresol, Aluminium, and Steel Cans",
       "body": "Aresol Cans Accepted at collection point in blue recycle cart. Instructions: Empty cans only. OK to leave labels on. Restrictions: NO needles or sharps. No gas or propane cans or tanks. Aluminum Cans Accepted at collection point in blue recycle cart. Instructions: Please rinse out cans. Restrictions: NO needles or sharps. No gas or propane cans or tanks.",
-      "categories":[
+      "categories": [
         "metal"
       ],
-      "tags":[ 
-      "spray",
-      "tin",
-      "food"]
+      "tags": [
+        "spray",
+        "tin",
+        "food"
+      ],
+      "location":["localBin","curbside"]
     },
     {
-      "name":"Appliances",
+      "name": "Appliances",
       "is_recyclable": true,
       "desc": "Household appliances",
-      "body":"Appliances can be recycled at drop off locations but cannot be left curbside. If appliances are still in working condition, consider taking them to a donation center",
-      "categories":["metal",
-      "plastic",
-      "other"],
-      "tags":[
+      "body": "Appliances can be recycled at drop off locations but cannot be left curbside. Some retailers, such as Best Buy, offer appliance recycling pick up for a small fee.  If appliances are still in working condition, consider taking them to a donation center",
+      "categories": [
+        "metal",
+        "plastic",
+        "other"
+      ],
+      "tags": [
         "microwave",
         "refridgerator",
-        "oven", 
+        "oven",
         "washing machine",
         "dryer",
         "dishwasher",
-        "air conditioner"
-      ]
+        "air conditioner",
+        "vacuum",
+        "fan",
+        "power washer"
+      ],
+      "location":["donate","dropOff","retail"]
     },
     {
       "name": "Paint",
-      "is_recyclable":false,
+      "is_recyclable": false,
       "desc": "Latex based or Oil based paint",
-      "body":"Oil based paint is not recycleable and cannot be thrown away. Latex based paint is not recycleable and can be thrown away in curbside garbage or taken to a drop off location. Please Consider taking paint to charity",
-      "categories":[
+      "body": "Oil based paint is not recycleable and cannot be thrown away. Latex based paint is not recycleable and can be thrown away in curbside garbage or taken to a drop off location. Please Consider taking paint to charity",
+      "categories": [
         "other"
       ],
-      "tags":[ 
+      "tags": [
         "varnish",
         "stain"
-      ]
+      ],
+      "location": ["dropOff","donate"]
     },
     {
-      "name":"Cartons",
-      "is_recyclable":true,
+      "name": "Cartons",
+      "is_recyclable": true,
       "desc": "Beverage cartons",
       "body": "Accepted at collection point in blue recycle cart. Acceptable cartons include those used for shelf-stable and refrigerated food and beverage products. Instructions: Please empty and rinse out",
-      "categories":[
+      "categories": [
         "paper",
         "plastic"
       ],
-      "tags":[
+      "tags": [
         "juice",
         "milk",
         "cream",
         "dairy"
-      ]
+      ],
+      "location": ["localBin","curbside"]
     },
     {
       "name": "Phones and Computers",
-      "is_recyclable":true,
+      "is_recyclable": true,
       "desc": "Computers, phones, and components",
       "body": "Phones, laptops, computer parts, tablets, and other related items can be recycled at e-waste recycling sites like Best Buy and Office Depot",
-      "categories":[
+      "categories": [
         "electronic"
       ],
-      "tags":[
+      "tags": [
         "tablet",
         "laptop",
         "desktop",
         "PC",
         "macbook",
         "iphone"
-      ]
+      ],
+      "location":["retail","dropOff","ecoAtm"]
     },
     {
       "name": "Writing Utinsils"
     }
   ]
 }
-
