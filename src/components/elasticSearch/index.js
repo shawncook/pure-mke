@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { ReactiveBase, DataSearch } from "@appbaseio/reactivesearch";
 import "./search.scss";
 import { Link } from "react-router-dom";
+import slugify from "../../utils/slugify";
 
 class ElasticSearch extends Component {
   _isMounted = false;
@@ -29,7 +30,7 @@ class ElasticSearch extends Component {
           <DataSearch
             className="search__input"
             innerClass={{
-              input: 'search__input-field'
+              input: "search__input-field"
             }}
             componentId="search"
             dataField={["name", "tags"]}
@@ -50,7 +51,11 @@ class ElasticSearch extends Component {
                   <ul className="search__list">
                     {uniqueData.map(element => (
                       <li key={element.value} className="search__item">
-                        <Link to={`/${element.source.name.toLowerCase()}`}>
+                        <Link
+                          to={{
+                            pathname: `/item/${element.source.id}`,
+                          }}
+                        >
                           <span className="search__item-title">
                             {element.source.name}
                           </span>

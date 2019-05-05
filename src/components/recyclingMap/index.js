@@ -26,14 +26,25 @@ class RecyclingMap extends Component {
   }
 
   componentDidMount() {
-    if (this.props.history.location.state.prefilters) {
+    if (
+      this.props.history &&
+      this.props.history.location &&
+      this.props.history.location.state &&
+      this.props.history.location.state.prefilters
+    ) {
       this.setState({ filters: this.props.history.location.state.prefilters });
     }
   }
 
   //WARNING! To be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.
   componentWillReceiveProps(nextProps) {
-    if (this.props.history.location.state.prefilters !== nextProps.history.location.state.prefilters) {
+    if (
+      this.props.history &&
+      this.props.history.location &&
+      this.props.history.location.state &&
+      this.props.history.location.state.prefilters !==
+        nextProps.history.location.state.prefilters
+    ) {
       this.setState({ filters: this.props.history.location.state.prefilters });
     }
   }
