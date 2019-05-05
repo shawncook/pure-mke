@@ -1,3 +1,54 @@
+@import '../../theme.scss';
+@import '../../mixins.scss';
+
 .app__map {
-  width: 100vw;
+  .leaflet-container {
+    width: 100vw;
+  }
+}
+
+.app__filters {
+  background: $colorBackgroundMenu;
+}
+
+.app__filter-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  overflow-x: auto;
+  padding-left: 0;
+}
+
+.app__filter-item {
+  list-style: none;
+
+  &.active {
+
+    button {
+      background: transparent;
+      color: rgba($colorWhite, 0.5);
+    }
+
+    img {
+      opacity: 0.5;
+    }
+  }
+
+  img {
+    height: $buttonWidth;
+    margin-right: $spacerStandard / 2;
+  }
+}
+
+.app__filter-button {
+  @include font-step-down-1;
+  align-items: center;
+  background-color: rgba(lighten($colorBackgroundMenu, 10%), 1);
+  border: 0;
+  color: $colorWhite;
+  display: flex;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 5px;
+  position: relative;
 }
