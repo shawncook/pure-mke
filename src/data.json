@@ -11,7 +11,7 @@
       "id": 2,
       "name": "Metal",
       "slug": "metal",
-      "desc": "<h2>Aluminum Cans</h2><p><b>YES:</b> All aluminum cans.</p><p><b>NO:</b> Aluminum foil, scrap aluminum, tin cans</p><h2>Aluminum Foil</h2><p><b>YES:</b> Aluminum foil, pie plates. Please rinse.</p><p><b> NO:</b> No foiled lined bags i.e. potato chip bags, aluminum cans, tin cans, scrap metal.</p> <h2>Tin Cans and Scrap Metal<h2> <p><b>YES:</b> Tin Cans, scrap aluminum, brass, copper, steel, small appliances.</p> <p><b>NO:</b> Hazardous materials, non-metal products (plastic, rubber), large appliances or items that contain freon</p>",
+      "desc": "<h2>Aluminum Cans</h2><p><b>YES:</b> All aluminum cans.</p><p><b>NO:</b> Aluminum foil, scrap aluminum, tin cans</p><h2>Aluminum Foil</h2><p><b>YES:</b> Aluminum foil, pie plates. Please rinse.</p><p><b> NO:</b> No foiled lined bags i.e. potato chip bags, aluminum cans, tin cans, scrap metal.</p> <h2>Tin Cans and Scrap Metal</h2> <p><b>YES:</b> Tin Cans, scrap aluminum, brass, copper, steel, small appliances.</p> <p><b>NO:</b> Hazardous materials, non-metal products (plastic, rubber), large appliances or items that contain freon</p>",
       "location":["dropOff","curbside","localBin"]
     },
     {
