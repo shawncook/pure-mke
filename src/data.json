@@ -4,25 +4,26 @@
       "id": 1,
       "name": "Plastic",
       "slug": "plastic",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas qui, laudantium, nemo eius dolore itaque, molestiae dignissimos blanditiis tempore porro consequuntur molestias veritatis enim assumenda numquam ab fuga illum eum."
+      "desc": "To determine the type of plastic, look at the bottom of the container for a number inside the triangle recycling symbol. Please rinse containers and remove lids. #1 PETE Plastic YES: #1 plastic containers (eg. soda and water bottles). NO: Plastic bags, plastics #2, 3, 4, 5, 6, and 7, polystyrene (Styrofoam), or any unlabeled plastic. Clear #2 HDPE Plastic YES: #2 clear plastic containers (eg. milk and juice jugs). NO: Plastic bags, plastics #1, 3, 4, 5, 6, and 7, polystyrene (Styrofoam), or any unlabeled plastic. Colored #2 HDPE Plastic and Plastics #3 - #7 YES: White or colored plastics labeled #2 HDPE (eg. laundry detergent bottles), plastic bottles and containers labeled #3 (V), #4 (LDPE), #5 (PP), #6 (PS), and #7 (Other). NO: Plastic bags, expanded polystyrene (aka Styrofoam), or any unlabeled plastic. Plastic Bags YES: Clean plastic grocery or merchandise bags, dry cleaning bags, and bubble wrap. NO: Foam, rigid containers, paper, food or liquids, polystyrene packaging, strapping, or twine."
     },
     {
       "id": 2,
       "name": "Metal",
-      "slug": "metal",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nobis sapiente dolorem nam in, doloribus. Ipsa veritatis, beatae velit quas blanditiis reiciendis, exercitationem autem perspiciatis corporis quod eos harum dolores."
+      "slug": "metal", 
+      "desc": "Aluminum Cans YES: All aluminum cans. NO: Aluminum foil, scrap aluminum, tin cans Aluminum Foil YES: Aluminum foil, pie plates. Please rinse. NO: No foiled lined bags i.e. potato chip bags, aluminum cans, tin cans, scrap metal. Tin Cans and Scrap Metal YES: Tin Cans, scrap aluminum, brass, copper, steel, small appliances. NO: Hazardous materials, non-metal products (plastic, rubber), large appliances or items that contain freon"
     },
     {
       "id": 3,
       "name": "Glass",
       "slug": "glass",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem sequi, fuga tenetur praesentium totam ullam officiis voluptatibus autem cupiditate. Aspernatur commodi adipisci laborum, quibusdam voluptate! Dolorum molestias amet, id voluptas."
+      "desc": "Clear Glass YES: All clear jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Brown Glass YES: All brown jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Green and Blue Glass YES: All green and blue jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues!"
+    
     },
     {
       "id": 4,
       "name": "Paper",
       "slug": "paper",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cupiditate voluptatem natus iusto quae mollitia? Magni omnis nobis, ipsam, sunt error assumenda dolore. Distinctio beatae quam, architecto vero aliquid quia?"
+      "desc": "Corrugated Cardboard YES: Corrugated cardboard (with wavy piece in the middle) and brown paper bags. NO: File folders, pizza or donut boxes, paper board (eg. cereal boxes), waxy or plasticized paperboard. Magazines YES: Magazines and catalogs. NO: Colored paper, mixed paper, paper bags, TV guides. Mixed Paper YES: All Paper including junk mail, phone books, white paper, computer paper, colored paper, shredded paper, hard and soft backed books, aseptic containers (juice and milk cartons and soy milk containers, and drink boxes), and newspapers and magazines. NO: Food contaminated paper like pizza or donut boxes, corrugated cardboard, waxy or plasticized paperboard. Newspaper YES: Newspaper and newspaper inserts. NO: Magazines, mixed paper, paper bags, phone books."
     },
     {
       "id": 5,
@@ -34,7 +35,7 @@
       "id": 6,
       "name": "Electronic",
       "slug": "electronic",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta, iure facilis natus tempore officia eos, reprehenderit cumque optio quisquam. Perferendis beatae at minima deleniti pariatur fugiat doloremque itaque, hic!"
+      "desc": "Electronics typically cannot be recycled at curbside pickup. Depending on what the item is, it can be taken to a drop off location or certain retailers like best buy offer electronic waste recycling and disposal"
     },
     {
       "id": 7,
@@ -47,7 +48,8 @@
     {
       "name": "Bottle",
       "is_recyclable": true,
-      "desc": "Yes it's recyclable and here's why!",
+      "desc": "Bottles are commonly plastic or glass and are recycleable.",
+      "body": "Bottles are commonly plastic or glass. They can be recycled in common recycling bins or with your regular recycling pick up. Leave lids on because plastic lids and caps are small and might get mixed in with the wrong material in the sorting process if they are not attached to the larger bottle. Leave labels on In the early days of recycling, labels were a problem, but this is no longer the case.",
       "categories": [
         "plastic",
         "glass"
@@ -74,6 +76,7 @@
       "name": "Battery",
       "is_recyclable": true,
       "desc": "Car or phone battery?! Sure!",
+      "body": "Alkaline Batteries (Single use) Single-use batteries (A, AA, AAA, C, D, etc.) can be thrown out in your regular garbage or can be recycled for a fee through a variety of mail in programs or local retail drop offs. Recycling these batteries through mail-in or retail drop off programs can recover steel and zinc. Never put these batteries in your recycling cart. Car Batteries (Lead Acid Batteries) Can be recycled. Take to recycling drop off location or often vendors that sell car batteries will offer a discount to take in and recycle old ones. Do not throw in the garbage or household recycling pick up, in the state of Wisconsin lead-acid batteries must be recycled. Phone Batteries and other Recharageable Batteries. Rechargeable batteries (NiCd, NiMH, NiZn, Li-ion, SSLA/Pb) Can be taken to stores like office depot, best buy, or UPS store locations to be recycled.For a complete list visit Call 2 Recycle's database. Rechargeable batteries contain toxic chemistries and should be recycled instead of being placed in the garbage.",
       "categories": [
         "electronic",
         "other"
@@ -83,6 +86,58 @@
         "phone",
         "alkaline"
       ]
+    },
+    {
+      "name":"Oil",
+      "is_recyclable": true,
+      "desc": "Motor Oil and Cooking oil",
+      "body": "Motor Oil Motor oil and filters can be recycled when taken to a drop off center.  Do not throw these items in the garbage or recycling cart. Cooking Oil Can be recycled at drop off centers. Cooking oil can be thrown away in your garbage cart, but we suggest recycling it. ",
+      "categories": [
+        "other"
+      ],
+      "tags":[
+        "car",
+        "automobile",
+        "cooking",
+        "vegetable",
+        "frying"
+      ]
+    },
+    {
+      "name": "Plastic Bag",
+      "is_recyclable": true,
+      "desc": "Plastic bags and other plastic films",
+      "body": "The City of Milwaukee does not accept plastic bags through its curbside recycling program. However Plastic Bags can be recycled at certain retail locations like Kohl’s, Pick n Save, Walmart, and Target. Accepted materials at such locations include plastic grocery bags, deflated packing pillows, produce bags, plastic wrap used to package toilet paper or paper towel, dry cleaning bags, and more! For a complete list of locations and information visit plasticfilmrecycling.org",
+      "categories": ["plastic"],
+      "tags": [
+        "plastic",
+        "bag",
+        "bags",
+        "wrap",
+        "plastic wrap",
+        "shopping",
+        "packaging",
+        "katy perry"
+      ]    
+    },
+    {
+      "name": "Coffee Cup",
+      "is_recyclable": false,
+      "desc": "To go Coffee Cups",
+      "body": "Coffee cups are usually constucted from paper and plastic Paper cups are not recycleable and must be thrown in the garbage. However, the lids on coffee cups can often be recycled. If the lid is white plastic and/or printed with plastic #6 recycling symbol it can be recycled. The cardboard sleeves can also be recycled. Bummed that your cup can’t be recycled? Bring your own mug or thermos! Not only is it more environmentally friendly, but coffee shops often give a discount. ",
+      "categories":[
+        "paper",
+        "plastic"
+      ],
+      "tags":[
+        "drink",
+        "tea",
+        "paper cup"
+      ]
+    },
+    {
+      
     }
   ]
 }
+
