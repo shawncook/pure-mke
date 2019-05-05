@@ -18,3 +18,11 @@
   font-size: 20px;
   line-height: 30px;
 }
+
+@mixin header-font {
+  font-size: rem(28px);
+  font-weight: 700;
+  line-height: rem(33px);
+  margin: 0 0 ($spacerStandard / 2);
+  text-transform: uppercase;
+}
