@@ -2,10 +2,14 @@
 @import '../../mixins.scss';
 
 .app__map {
-  width: 100vw;
+  .leaflet-container {
+    width: 100vw;
+  }
 }
 
-.app__filters {}
+.app__filters {
+  background: $colorBackgroundMenu;
+}
 
 .app__filter-list {
   display: flex;
@@ -17,11 +21,12 @@
 
 .app__filter-item {
   list-style: none;
-  padding: 0;
 
   &.active {
+
     button {
-      color: rgba($colorSoftBlack, 0.5);
+      background: transparent;
+      color: rgba($colorWhite, 0.5);
     }
 
     img {
@@ -30,18 +35,20 @@
   }
 
   img {
+    height: $buttonWidth;
     margin-right: $spacerStandard / 2;
-    width: 20px;
   }
 }
 
 .app__filter-button {
   @include font-step-down-1;
   align-items: center;
-  background: transparent;
+  background-color: rgba(lighten($colorBackgroundMenu, 10%), 1);
   border: 0;
+  color: $colorWhite;
   display: flex;
   font-family: inherit;
   font-weight: 500;
+  padding: 5px;
   position: relative;
 }

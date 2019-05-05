@@ -13,8 +13,6 @@
       "slug": "metal",
       "desc": "<h2>Aluminum Cans</h2><p><b>YES:</b> All aluminum cans.</p><p><b>NO:</b> Aluminum foil, scrap aluminum, tin cans</p><h2>Aluminum Foil</h2><p><b>YES:</b> Aluminum foil, pie plates. Please rinse.</p><p><b> NO:</b> No foiled lined bags i.e. potato chip bags, aluminum cans, tin cans, scrap metal.</p> <h2>Tin Cans and Scrap Metal<h2> <p><b>YES:</b> Tin Cans, scrap aluminum, brass, copper, steel, small appliances.</p> <p><b>NO:</b> Hazardous materials, non-metal products (plastic, rubber), large appliances or items that contain freon</p>",
       "location":["dropOff","curbside","localBin"]
-
-      
     },
     {
       "id": 3,
@@ -58,7 +56,7 @@
       "name": "Bottle",
       "is_recyclable": true,
       "desc": "Bottles are commonly plastic or glass and are recycleable.",
-      "body": "<div> <div>Bottles are commonly<span style='color: #339966;'><a style='color: #339966;' href='/components/categories/plastic'>plastic</a></span> or <span style='color: #339966;''><a style='color: #339966;' href='/components/categories/glass'>glass</a>.</span></div><div>They can be recycled in common recycling bins or with your <span style='color: #339966;'><a style='color: #339966;' href='##'>regular recycling pick up</a>.</span></div><div>&nbsp;</div> <div><strong>Leave lids on </strong></div><div>Because plastic lids and caps are small and might get mixed in with the wrong material in the sorting process if they are not attached to the larger bottle.</div><div>&nbsp;</div><div><strong>Leave labels on </strong></div><div>In the early days of recycling, labels were a problem, but this is no longer the case.</div> </div>",
+      "body": "<div> <div>Bottles are commonly<a style='color: #339966;' href='/components/categories/plastic'>plastic</a> or '><a style='color: #339966;' href='/components/categories/glass'>glass</a>.</div><div>They can be recycled in common recycling bins or with your <a style='color: #339966;' href='##'>regular recycling pick up</a>.</div <div><strong>Leave lids on </strong></div><div>Because plastic lids and caps are small and might get mixed in with the wrong material in the sorting process if they are not attached to the larger bottle.</div<div><strong>Leave labels on </strong></div><div>In the early days of recycling, labels were a problem, but this is no longer the case.</div> </div>",
       "categories": [
         "plastic",
         "glass"
@@ -124,7 +122,7 @@
       "name": "Plastic Bag",
       "is_recyclable": true,
       "desc": "Plastic bags and other plastic films",
-      "body": "<div><div>The City of Milwaukee does not accept <span style='color: #339966;'><a style='color: #339966; href='/components/categories/plastic'>plastic</a></span> bags through its curbside recycling program.</div><div>&nbsp;</div><div>However, Plastic Bags can be recycled at certain retail locations like <span style='color: #339966;'><a style='color: #339966;' href='https://corporate.kohls.com/corporate-responsibility/sustainability'>Kohl&rsquo;s</a>, <a style='color: #339966;' href='###''>Pick n Save</a></span>, <span style='color: #339966;'><a style='color: #339966;' href='###'>Walmart</a></span>, and <span style='color: #339966;'><a style='color: #339966;' href='##'>Target</a></span>.</div><div>Accepted materials at such locations include plastic grocery bags, deflated packing pillows, produce bags, plastic wrap used to package toilet paper or paper towel, dry cleaning bags, and more! For a complete list of locations and information visit <span style='color: #339966;'><a style='color: #33996'href='plasticfilmrecyclin.org'>plasticfilmrecycling.org</a></span></div></div>",
+      "body": "<div><div>The City of Milwaukee does not accept <a style='color: #339966; href='/components/categories/plastic'>plastic</a> bags through its curbside recycling program.</div<div>However, Plastic Bags can be recycled at certain retail locations like <a style='color: #339966;' href='https://corporate.kohls.com/corporate-responsibility/sustainability'>Kohl&rsquo;s</a>, <a style='color: #339966;' href='###''>Pick n Save</a>, <a style='color: #339966;' href='###'>Walmart</a>, and <a style='color: #339966;' href='##'>Target</a>.</div><div>Accepted materials at such locations include plastic grocery bags, deflated packing pillows, produce bags, plastic wrap used to package toilet paper or paper towel, dry cleaning bags, and more! For a complete list of locations and information visit <a style='color: #33996'href='plasticfilmrecyclin.org'>plasticfilmrecycling.org</a></div></div>",
       "categories": [
         "plastic"
       ],
@@ -145,7 +143,7 @@
       "name": "Coffee Cup",
       "is_recyclable": false,
       "desc": "To go Coffee Cups",
-      "body": "<div><div>Coffee cups are usually constructed from <span style='color: #339966;'><a style='color: #339966;' href='/components/categories/paper'>paper</a></span> and <span style='color: #339966;><a style='color: #339966;' href='components/categories/plastic'>plastic</a></span>.</div><div>&nbsp;</div><div>Paper cups <strong>are not recyclable</strong> and must be thrown in the garbage.</div> <div>&nbsp;</div> <div>However, the lids on coffee cups can often be recycled. If the lid is white plastic and/or printed with plastic #6 recycling symbol it can be recycled. The cardboard sleeves can also be recycled.</div> <div>&nbsp;</div><div>Bummed that your cup can&rsquo;t be recycled? Bring your own mug or thermos! Not only is it more environmentally friendly, but coffee shops often give a discount!</div> </div>",
+      "body": "<div>Coffee cups are usually constructed from <a style='color: #339966;' href='/components/categories/paper'>paper</a> and <a style='color: #339966;' href='components/categories/plastic'>plastic</a>.</div><div>Paper cups <strong>are not recyclable</strong> and must be thrown in the garbage.</div> <div>However, the lids on coffee cups can often be recycled. If the lid is white plastic and/or printed with plastic #6 recycling symbol it can be recycled. The cardboard sleeves can also be recycled.</div><div>Bummed that your cup can&rsquo;t be recycled? Bring your own mug or thermos! Not only is it more environmentally friendly, but coffee shops often give a discount!</div>",
       "categories": [
         "paper",
         "plastic"
