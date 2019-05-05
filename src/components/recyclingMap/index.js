@@ -134,7 +134,8 @@ class RecyclingMap extends Component {
                           <strong>{location.name} </strong> <br />
                           {location.address} <br />
                           {location.city},{location.state}
-                          {location.zip}
+                          {location.zip}<br />
+                          <a href={location.website} target="_blank">Website</a>
                         </span>
                       </Popup>
                     </Marker>
