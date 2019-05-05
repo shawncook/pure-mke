@@ -219,7 +219,8 @@
       "location": ["retail", "dropOff", "ecoAtm"]
     },
     {
-      "name": "Writing Utinsils"
+      "name": "Writing Utinsils",
+      "tags": ""
     }
   ]
 }
