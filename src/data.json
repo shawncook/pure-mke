@@ -56,7 +56,7 @@
       "name": "Bottle",
       "is_recyclable": true,
       "desc": "Bottles are commonly plastic or glass and are recycleable.",
-      "body": "<div> <div>Bottles are commonly<a style='color: #339966;' href='/components/categories/plastic'>plastic</a> or '><a style='color: #339966;' href='/components/categories/glass'>glass</a>.</div><div>They can be recycled in common recycling bins or with your <a style='color: #339966;' href='##'>regular recycling pick up</a>.</div <div><strong>Leave lids on </strong></div><div>Because plastic lids and caps are small and might get mixed in with the wrong material in the sorting process if they are not attached to the larger bottle.</div<div><strong>Leave labels on </strong></div><div>In the early days of recycling, labels were a problem, but this is no longer the case.</div> </div>",
+      "body": "<div> <div>Bottles are commonly<a href='/components/categories/plastic'>plastic</a> or '><a href='/components/categories/glass'>glass</a>.</div><div>They can be recycled in common recycling bins or with your <a href='##'>regular recycling pick up</a>.</div <div><strong>Leave lids on </strong></div><div>Because plastic lids and caps are small and might get mixed in with the wrong material in the sorting process if they are not attached to the larger bottle.</div<div><strong>Leave labels on </strong></div><div>In the early days of recycling, labels were a problem, but this is no longer the case.</div> </div>",
       "categories": [
         "plastic",
         "glass"
@@ -87,7 +87,7 @@
       "name": "Battery",
       "is_recyclable": true,
       "desc": "Car or phone battery?! Sure!",
-      "body": "<p><strong>Alkaline Batteries (Single-use) batteries </strong></p><p>(A, AA, AAA, C, D, etc.) can be thrown out in your regular garbage or can be recycled for a fee through a variety of mail in programs or local <span style='color: #339966;'><a style='color: #339966;' href='##'>retail drop-offs</a></span>. Recycling these batteries through mail-in or retail drop off programs can recover steel and zinc. Never put these batteries in your recycling cart.</p><p><strong>Car Batteries (Lead Acid Batteries) </strong></p><p>Can be recycled. Take to recycling drop off location or often vendors that sell car batteries will offer a discount to take in and recycle old ones. Do not throw in the garbage or household recycling pick up, in the state of Wisconsin lead-acid batteries must be recycled. Phone Batteries and other</p><p><strong>Recharageable Batteries</strong></p><p>Rechargeable batteries (NiCd, NiMH, NiZn, Li-ion, SSLA/Pb) Can be taken to stores like office depot, best buy, or UPS store locations to be recycled.For a complete list visit Call 2 Recycle's database. Rechargeable batteries contain toxic chemistries and should be recycled instead of being placed in the garbage.</p>",
+      "body": "<p><strong>Alkaline Batteries (Single-use) batteries </strong></p><p>(A, AA, AAA, C, D, etc.) can be thrown out in your regular garbage or can be recycled for a fee through a variety of mail in programs or local <span><a href='##'>retail drop-offs</a></span>. Recycling these batteries through mail-in or retail drop off programs can recover steel and zinc. Never put these batteries in your recycling cart.</p><p><strong>Car Batteries (Lead Acid Batteries) </strong></p><p>Can be recycled. Take to recycling drop off location or often vendors that sell car batteries will offer a discount to take in and recycle old ones. Do not throw in the garbage or household recycling pick up, in the state of Wisconsin lead-acid batteries must be recycled. Phone Batteries and other</p><p><strong>Recharageable Batteries</strong></p><p>Rechargeable batteries (NiCd, NiMH, NiZn, Li-ion, SSLA/Pb) Can be taken to stores like office depot, best buy, or UPS store locations to be recycled.For a complete list visit Call 2 Recycle's database. Rechargeable batteries contain toxic chemistries and should be recycled instead of being placed in the garbage.</p>",
       "categories": [
         "electronic",
         "other"
@@ -122,7 +122,7 @@
       "name": "Plastic Bag",
       "is_recyclable": true,
       "desc": "Plastic bags and other plastic films",
-      "body": "<div><div>The City of Milwaukee does not accept <a style='color: #339966; href='/components/categories/plastic'>plastic</a> bags through its curbside recycling program.</div<div>However, Plastic Bags can be recycled at certain retail locations like <a style='color: #339966;' href='https://corporate.kohls.com/corporate-responsibility/sustainability'>Kohl&rsquo;s</a>, <a style='color: #339966;' href='###''>Pick n Save</a>, <a style='color: #339966;' href='###'>Walmart</a>, and <a style='color: #339966;' href='##'>Target</a>.</div><div>Accepted materials at such locations include plastic grocery bags, deflated packing pillows, produce bags, plastic wrap used to package toilet paper or paper towel, dry cleaning bags, and more! For a complete list of locations and information visit <a style='color: #33996'href='plasticfilmrecyclin.org'>plasticfilmrecycling.org</a></div></div>",
+      "body": "<div><div>The City of Milwaukee does not accept <a href='/components/categories/plastic'>plastic</a> bags through its curbside recycling program.</div<div>However, Plastic Bags can be recycled at certain retail locations like <a href='https://corporate.kohls.com/corporate-responsibility/sustainability'>Kohl&rsquo;s</a>, <a href='###''>Pick n Save</a>, <a href='###'>Walmart</a>, and <a href='##'>Target</a>.</div><div>Accepted materials at such locations include plastic grocery bags, deflated packing pillows, produce bags, plastic wrap used to package toilet paper or paper towel, dry cleaning bags, and more! For a complete list of locations and information visit <a style='color: #33996'href='plasticfilmrecyclin.org'>plasticfilmrecycling.org</a></div></div>",
       "categories": [
         "plastic"
       ],
@@ -143,7 +143,7 @@
       "name": "Coffee Cup",
       "is_recyclable": false,
       "desc": "To go Coffee Cups",
-      "body": "<div>Coffee cups are usually constructed from <a style='color: #339966;' href='/components/categories/paper'>paper</a> and <a style='color: #339966;' href='/category/1'>plastic</a>.</div><div>Paper cups <strong>are not recyclable</strong> and must be thrown in the garbage.</div> <div>However, the lids on coffee cups can often be recycled. If the lid is white plastic and/or printed with plastic #6 recycling symbol it can be recycled. The cardboard sleeves can also be recycled.</div><div>Bummed that your cup can&rsquo;t be recycled? Bring your own mug or thermos! Not only is it more environmentally friendly, but coffee shops often give a discount!</div>",
+      "body": "<div>Coffee cups are usually constructed from <a href='/components/categories/paper'>paper</a> and <a href='/category/1'>plastic</a>.</div><div>Paper cups <strong>are not recyclable</strong> and must be thrown in the garbage.</div> <div>However, the lids on coffee cups can often be recycled. If the lid is white plastic and/or printed with plastic #6 recycling symbol it can be recycled. The cardboard sleeves can also be recycled.</div><div>Bummed that your cup can&rsquo;t be recycled? Bring your own mug or thermos! Not only is it more environmentally friendly, but coffee shops often give a discount!</div>",
       "categories": [
         "paper",
         "plastic"
@@ -157,7 +157,7 @@
     },
     {
       "id": 7,
-      "name": "cans",
+      "name": "Cans",
       "is_recycleable": true,
       "desc": "Aresol, Aluminium, and Steel Cans",
       "body": "Aresol Cans Accepted at collection point in blue recycle cart. Instructions: Empty cans only. OK to leave labels on. Restrictions: NO needles or sharps. No gas or propane cans or tanks. Aluminum Cans Accepted at collection point in blue recycle cart. Instructions: Please rinse out cans. Restrictions: NO needles or sharps. No gas or propane cans or tanks.",

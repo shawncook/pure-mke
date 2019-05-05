@@ -60,6 +60,20 @@
   flex-basis: 100%;
 }
 
+.categoryDetail__desc,
+.categoryDetail__items-list {
+
+  a {
+    font-weight: 500;
+    color: $colorTextLinks;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .categoryDetail__image {
   content: "";
   display: block;
@@ -77,4 +91,9 @@
     height: 100%;
     width: 100%;
   }
+}
+
+.categoryDetail__items-title {
+  color: darken($colorBackgroundInputDark, 30%);
+  margin-bottom: $spacerStandard;
 }
