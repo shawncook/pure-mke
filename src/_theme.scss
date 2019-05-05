@@ -6,5 +6,13 @@ $colorTextLight: #CCC;
 $colorWhite: #fff;
 $colorBorderLight: #eee;
 $colorMenuBackground: #373a47;
-
+$colorBackgroundHeader: #FED9A8;
 $spacerStandard: 1em;
+
+$breakpoints:(
+  phone: 320px,
+  large-phone: 530px,
+  tablet: 782px,
+  desktop: 900px,
+  large-desktop: 1147px,
+);
