@@ -178,6 +178,39 @@
         "varnish",
         "stain"
       ]
+    },
+    {
+      "name":"Cartons",
+      "is_recyclable":true,
+      "desc": "Beverage cartons",
+      "body": "Accepted at collection point in blue recycle cart. Acceptable cartons include those used for shelf-stable and refrigerated food and beverage products. Instructions: Please empty and rinse out",
+      "categories":[
+        "paper",
+        "plastic"
+      ],
+      "tags":[
+        "juice",
+        "milk",
+        "cream",
+        "dairy"
+      ]
+    },
+    {
+      "name": "Phones and Computers",
+      "is_recyclable":true,
+      "desc": "Computers, phones, and components",
+      "body": "Phones, laptops, computer parts, tablets, and other related items can be recycled at e-waste recycling sites like Best Buy and Office Depot",
+      "categories":[
+        "electronic"
+      ],
+      "tags":[
+        "tablet",
+        "laptop",
+        "desktop",
+        "PC",
+        "macbook",
+        "iphone"
+      ]
     }
   ]
 }
