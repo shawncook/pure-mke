@@ -124,6 +124,7 @@ class RecyclingMap extends Component {
                 return (
                   this.state.filters.includes(location.style) && (
                     <Marker
+                      className="marker"
                       key={`${location.name}-${i}`}
                       draggable={false}
                       position={[location.latitude, location.longitude]}
@@ -131,11 +132,21 @@ class RecyclingMap extends Component {
                     >
                       <Popup minWidth={90}>
                         <span onClick={this.toggleDraggable}>
-                          <strong>{location.name} </strong> <br />
-                          {location.address} <br />
-                          {location.city},{location.state}
-                          {location.zip}<br />
-                          <a href={location.website} target="_blank">Website</a>
+                          <div className="marker__title">
+                            <strong>{location.name} </strong>
+                          </div>
+                          <address className="marker__address">
+                            {location.address} <br />
+                            {location.city}, {location.state}&nbsp;
+                            {location.zip}
+                          </address>
+                          <a
+                            className="marker__link"
+                            href={location.website}
+                            target="_blank"
+                          >
+                            Website
+                          </a>
                         </span>
                       </Popup>
                     </Marker>

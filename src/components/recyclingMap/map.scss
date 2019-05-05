@@ -52,3 +52,35 @@
   padding: 5px 8px;
   position: relative;
 }
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0;
+  box-shadow: 0 3px 10px rgba($colorBlack, 0.4);
+  color: $colorSoftBlack;
+}
+
+a.marker__link {
+  @include font-step-down-1;
+  font-weight: 600;
+  text-decoration: none;
+  align-items: center;
+  background-color: rgba(lighten($colorBackgroundMenu, 10%), 1);
+  border: 0;
+  border-radius: 5px;
+  color: $colorWhite;
+  display: inline-flex;
+  font-family: inherit;
+  font-weight: 500;
+  margin: $spacerStandard/2 0;
+  padding: 6px 10px;
+  position: relative;
+}
+
+.marker__title {
+  @include font-step-up-1;
+}
+
+.marker__address {
+  @include font-step-down-1;
+  font-style: normal;
+}
