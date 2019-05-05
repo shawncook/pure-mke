@@ -1,0 +1,37 @@
+@import '../../theme.scss';
+@import '../../mixins.scss';
+
+.app__menu {
+  color: $colorWhite;
+  max-width: 500px;
+  position: relative;
+
+  a {
+    color: inherit;
+    display: block;
+    padding: $spacerStandard / 2;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.app__menu-button {
+  height: 40px;
+  top: $spacerStandard;
+  left: $spacerStandard;
+  position: relative;
+  width: 40px;
+}
+
+.bm-burger-bars {
+  background: $colorMenuBackground;
+}
+
+.bm-menu {
+  background: $colorMenuBackground;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
