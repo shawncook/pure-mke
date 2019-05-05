@@ -34,7 +34,11 @@ export default class RecyclablesDetail extends React.PureComponent {
         </Helmet>
         <div className="app">
           <div className={`categoryDetail ${Slugify(item.name)}`}>
-            <Link className="categoryDetail__link" to="/" onClick={onCloseItem}>
+            <Link
+              className="categoryDetail__close-button"
+              to="/"
+              onClick={onCloseItem}
+            >
               <IconClose />
             </Link>
             <div className="categoryDetail__wrapper">
