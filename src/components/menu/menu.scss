@@ -12,8 +12,8 @@
     display: block;
     padding: $spacerStandard / 2;
     position: relative;
-    transition: background-color 0.08s ease-in-out;
     text-decoration: none;
+    transition: background-color 0.08s ease-in-out;
 
     &:hover {
       background-color: rgba(lighten($colorBackgroundMenu, 10%), 1);

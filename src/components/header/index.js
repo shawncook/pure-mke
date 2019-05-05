@@ -23,6 +23,8 @@ class Header extends Component {
             <img
               alt={appName}
               src={logo}
+              height="40"
+              width="40"
             />
           </Link>
         </h1>

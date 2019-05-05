@@ -20,28 +20,3 @@ body {
 .app__recyclable {
   list-style: none;
 }
-
-.app__categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-
-.app__category {
-  background: $colorWhite;
-  cursor: pointer;
-  flex-basis: 100%;
-  list-style: none;
-  margin-bottom: 1em;
-
-  @media (min-width: map-get($breakpoints, 'tablet')) {
-    flex-basis: calc((100% / 2) - #{$spacerStandard / 2});
-  }
-}
-
-.app__category-wrapper {
-  padding: $spacerStandard;
-  width: 100%
-}

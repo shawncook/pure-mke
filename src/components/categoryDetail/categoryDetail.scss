@@ -11,17 +11,59 @@
     background: none;
     border: none;
     font: inherit;
+    height: $buttonWidth;
     margin-left: auto;
+    padding: 0;
+    width: $buttonWidth;
+
+    path {
+      stroke: $colorBlack;
+    }
   }
 }
 
 .categoryDetail__header {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+
+  @media (min-width: map-get($breakpoints, 'tablet')) {
+    flex-flow: row;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
+.categoryDetail__title {
   @include header-font;
+  display: inline-block;
+
+  @media (min-width: map-get($breakpoints, 'tablet')) {
+    @include font-step-up-3;
+  }
+}
+
+.categoryDetail__desc {
+  @import '../../rich-text';
+  flex-basis: 100%;
 }
 
 .categoryDetail__image {
   content: '';
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 80px;
+  margin: 0 auto $spacerStandard;
+  width: 80px;
+
+  @media (min-width: map-get($breakpoints, 'tablet')) {
+    margin: 0;
+    height: 120px;
+    width: 120px;
+  }
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
 }

@@ -1,0 +1,177 @@
+p,
+ul,
+ol,
+blockquote,
+q,
+pre,
+address,
+area,
+article,
+aside,
+audio,
+code,
+colgroup,
+div,
+details,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+img,
+section,
+table,
+summary,
+video {
+  display: block;
+  margin-bottom: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+big {
+  font-size: large;
+  font-weight: 700;
+}
+
+hr {
+  border: 1px solid gray;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  font-style: italic;
+  margin: rem(0 10);
+}
+
+cite {
+  font-size: 0.75em;
+}
+
+th {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  padding: 0.5em;
+}
+
+del,
+strike {
+  text-decoration: line-through;
+}
+
+ul {
+  list-style: disc outside none;
+
+  ul {
+    margin-top: 0.5em;
+  }
+
+  > li > ul {
+    list-style-type: circle;
+
+    > li > ul {
+      list-style-type: square;
+    }
+  }
+}
+
+ol {
+  list-style: decimal outside none;
+
+  ol {
+    margin-top: 0.5em;
+  }
+
+  > li > ol {
+    list-style-type: lower-roman;
+
+    > li > ol {
+      list-style-type: lower-alpha;
+    }
+  }
+}
+
+li {
+  margin: 0 0 0.5em 1em;
+}
+
+a {
+
+  img {
+    border: none;
+    display: inline-block;
+  }
+}
+
+p {
+
+  img {
+    margin-bottom: 0.5em;
+  }
+}
+
+address {
+  font-size: 0.75em;
+}
+
+abbr,
+acronym {
+  color: gray;
+  text-decoration: underline dotted;
+}
+
+code,
+var,
+tt,
+kbd {
+  display: inline;
+  font: 400 1em 'Courier', monospace;
+}
+
+pre {
+  font: 400 1em 'Courier', monospace;
+}
+
+img,
+figure,
+video {
+  display: block;
+}
+
+figure {
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+figcaption {
+  font-size: 0.75em;
+  text-align: center;
+}

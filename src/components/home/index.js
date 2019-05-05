@@ -1,21 +1,21 @@
-import React from "react";
+import React, { Fragment } from "react";
 import CategoryDetail from "../categoryDetail/index";
 import data from "../../data.json";
 import "../../app.scss";
 import ElasticSearch from "../elasticSearch/index";
 import Helmet from "react-helmet";
+import IconBattery from "../../img/icon-battery.svg";
+import './home.scss';
 
 class Home extends React.Component {
   constructor() {
     super();
     this.state = {
       activeCategory: false,
-      searchKeyword: "",
       searchItem: ""
     };
     this.onCategoryClick = this.onCategoryClick.bind(this);
     this.onCloseCategory = this.onCloseCategory.bind(this);
-    this.onChange = this.onChange.bind(this);
   }
 
   onCategoryClick(category) {
@@ -30,17 +30,11 @@ class Home extends React.Component {
     });
   }
 
-  onChange(event) {
-    this.setState({
-      searchKeyword: event.target.value
-    });
-  }
-
   render() {
-    const { activeCategory, searchKeyword } = this.state;
+    const { activeCategory } = this.state;
     const categories = data.categories;
     return (
-      <>
+      <Fragment>
         <Helmet>
           <title>Home - pureMKE</title>
           <meta
@@ -48,15 +42,18 @@ class Home extends React.Component {
             content="This is our hackathon app for easily finding out how and where to recycle materials"
           />
         </Helmet>
-        <div className="app">
+        <div
+          className="app"
+        >
           {!activeCategory && (
-            <ElasticSearch onClick={this.onSearchItemClick} />
-          )}
-          {searchKeyword && (
-            <span className="app__results">{`Results for ${searchKeyword}`}</span>
+            <ElasticSearch
+              onClick={this.onSearchItemClick}
+            />
           )}
           {!activeCategory && 0 < categories.length && (
-            <ul className="app__categories">
+            <ul
+              className="app__categories"
+            >
               {categories.map(item => {
                 return (
                   <li
@@ -64,7 +61,25 @@ class Home extends React.Component {
                     key={item.name}
                     onClick={() => this.onCategoryClick(item)}
                   >
-                    <div className="app__category-wrapper">{item.name}</div>
+                    <div
+                      className="app__category-wrapper"
+                    >
+                      <div
+                        className="app__category-image"
+                      >
+                        <img
+                          src={IconBattery}
+                          alt={item.name}
+                          height="60"
+                          width="60"
+                        />
+                      </div>
+                      <h2
+                        className="app__category-title"
+                      >
+                        {item.name}
+                      </h2>
+                    </div>
                   </li>
                 );
               })}
@@ -77,7 +92,7 @@ class Home extends React.Component {
             />
           )}
         </div>
-      </>
+      </Fragment>
     );
   }
 }

@@ -1,0 +1,48 @@
+@import '../../theme.scss';
+@import '../../mixins.scss';
+
+.app__categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.app__category {
+  background: $colorWhite;
+  cursor: pointer;
+  flex-basis: 100%;
+  list-style: none;
+  margin-bottom: 1em;
+  padding: 0 $spacerStandard;
+
+  @media (min-width: map-get($breakpoints, 'tablet')) {
+    flex-basis: calc((100% / 2) - #{$spacerStandard / 2});
+    padding: 0;
+  }
+}
+
+.app__category-wrapper {
+  border: ($spacerStandard / 2) solid $colorBackgroundInput;
+  padding: $spacerStandard;
+  width: calc(100% - #{$spacerStandard * 3});
+}
+
+.app__category-title {
+  @include font-step-up-1;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: map-get($breakpoints, 'tablet')) {
+    @include font-step-up-2;
+  }
+}
+
+.app__category-image {
+  display: table;
+  margin: $spacerStandard auto 0;
+}

@@ -1,3 +1,9 @@
+@mixin outdentElement {
+  margin-left: calc(-50vw + 50%);
+  transform: translateX(calc(50vw - 50%));
+  width: 100vw;
+}
+
 @mixin screenreaderOnly {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -27,6 +33,11 @@
 @mixin font-step-up-2 {
   font-size: 26px;
   line-height: 33px;
+}
+
+@mixin font-step-up-3 {
+  font-size: 36px;
+  line-height: 1.2;
 }
 
 @mixin header-font {

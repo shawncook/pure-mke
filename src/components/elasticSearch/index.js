@@ -54,8 +54,8 @@ class ElasticSearch extends Component {
                           <span className="search__item-title">
                             {element.source.name}
                           </span>
-                          &nbsp;-&nbsp;
                           <span
+                            className="search__item-meta"
                             dangerouslySetInnerHTML={this.boldString(
                               element.value,
                               value.trim()
