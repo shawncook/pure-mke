@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Map, TileLayer } from "react-leaflet";
+import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import { geolocated } from "react-geolocated";
 
 class RecyclingMap extends Component {
   constructor() {
@@ -12,19 +13,32 @@ class RecyclingMap extends Component {
   }
 
   render() {
-    const stamenTonerTiles =
-      "http://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}.png";
-    const stamenTonerAttr =
-      'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
-    const mapCenter = [39.9528, -75.1638];
-    const zoomLevel = 12;
-    const position = [this.state.lat, this.state.lng];
     return (
-      <Map center={mapCenter} zoom={zoomLevel}>
-        <TileLayer attribution={stamenTonerAttr} url={stamenTonerTiles} />
-      </Map>
+      this.props.coords && (
+        <Map
+          center={[this.props.coords.latitude, this.props.coords.longitude]}
+          zoom={this.state.zoom}
+        >
+          <TileLayer
+            url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
+          />
+          <Marker
+            position={[this.props.coords.latitude, this.props.coords.longitude]}
+          >
+            <Popup>
+              A pretty CSS3 popup. <br /> Easily customizable.
+            </Popup>
+          </Marker>
+        </Map>
+      )
     );
   }
 }
 
-export default RecyclingMap;
+export default geolocated({
+  positionOptions: {
+    enableHighAccuracy: false
+  },
+  userDecisionTimeout: 5000
+})(RecyclingMap);
