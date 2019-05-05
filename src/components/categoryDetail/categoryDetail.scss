@@ -1,0 +1,27 @@
+@import '../../theme.scss';
+@import '../../mixins.scss';
+
+.categoryDetail {
+  background: $colorWhite;
+  display: flex;
+  flex-direction: column;
+  padding: $spacerStandard * 2;
+
+  button {
+    background: none;
+    border: none;
+    font: inherit;
+    margin-left: auto;
+  }
+}
+
+.categoryDetail__header {
+  @include header-font;
+}
+
+.categoryDetail__image {
+  content: '';
+  display: block;
+  height: 30px;
+  width: 30px;
+}

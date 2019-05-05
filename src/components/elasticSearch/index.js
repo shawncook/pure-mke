@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   ReactiveBase,
-  DataSearch,
-  CategorySearch,
-  ResultCard
+  DataSearch
 } from '@appbaseio/reactivesearch';
 import './search.scss';
 
