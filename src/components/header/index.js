@@ -4,6 +4,7 @@ import './header.scss';
 import { Link } from "react-router-dom";
 import logo from '../../img/logo.png';
 
+
 const appName = "PureMKE"
 
 class Header extends Component {

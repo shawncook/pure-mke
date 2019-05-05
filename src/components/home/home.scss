@@ -31,6 +31,7 @@
 
 .app__category-title {
   @include font-step-up-1;
+  color: $colorSoftBlack;
   font-weight: 400;
   letter-spacing: 0.5px;
   margin-top: 0;
@@ -44,5 +45,10 @@
 
 .app__category-image {
   display: table;
-  margin: $spacerStandard auto 0;
+  height: 80px;
+  margin: $spacerStandard auto;
+
+  svg {
+    height: 100%;
+  }
 }
