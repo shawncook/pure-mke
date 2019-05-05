@@ -67,23 +67,25 @@ export default class CategoryDetail extends React.PureComponent {
                 dangerouslySetInnerHTML={{ __html: category.desc }}
               />
 
-              <div className="categoryDetail__items">
-                <h3 className="categoryDetail__items-title">
-                  Recyclables Using {category.name}
-                </h3>
-                <ul className="categoryDetail__items-list">
-                  {items.map(item => (
-                    <Link
-                      className="categoryDetail__items-item"
-                      key={item.id}
-                      to={`/item/${item.id}`}
-                    >
-                      {" "}
-                      <li key={item.id}>{item.name}</li>
-                    </Link>
-                  ))}
-                </ul>
-              </div>
+              {0 < items.length && (
+                <div className="categoryDetail__items">
+                  <h3 className="categoryDetail__items-title">
+                    Recyclables Using {category.name}
+                  </h3>
+                  <ul className="categoryDetail__items-list">
+                    {items.map(item => (
+                      <Link
+                        className="categoryDetail__items-item"
+                        key={item.id}
+                        to={`/item/${item.id}`}
+                      >
+                        {" "}
+                        <li key={item.id}>{item.name}</li>
+                      </Link>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </div>

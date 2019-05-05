@@ -21,7 +21,6 @@ class RecyclingMap extends Component {
   constructor() {
     super();
     this.state = {
-      loading: true,
       zoom: 11,
       filters: []
     };
@@ -65,9 +64,6 @@ class RecyclingMap extends Component {
   };
 
   render() {
-    const {
-      loading,
-    } = this.state;
     return (
       <Fragment>
         <Helmet>

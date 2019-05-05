@@ -10,7 +10,7 @@ const Icon = props => {
   switch(props.name) {
     case "cardboard":
       return <IconBreak {...props} />;
-    case "electronic":
+    case "electronics":
       return <IconBattery {...props} />;
     case "glass":
       return <IconChampagne {...props} />;
