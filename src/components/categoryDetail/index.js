@@ -59,7 +59,7 @@ export default class CategoryDetail extends React.PureComponent {
                     state: { prefilters: ["bags"] }
                   }}
                 >
-                  I want to recycle this!
+                  Where Can I Recycle This?
                 </LinkButton>
               </div>
               <div
