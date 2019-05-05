@@ -143,7 +143,7 @@
       "name": "Coffee Cup",
       "is_recyclable": false,
       "desc": "To go Coffee Cups",
-      "body": "<div>Coffee cups are usually constructed from <a style='color: #339966;' href='/components/categories/paper'>paper</a> and <a style='color: #339966;' href='components/categories/plastic'>plastic</a>.</div><div>Paper cups <strong>are not recyclable</strong> and must be thrown in the garbage.</div> <div>However, the lids on coffee cups can often be recycled. If the lid is white plastic and/or printed with plastic #6 recycling symbol it can be recycled. The cardboard sleeves can also be recycled.</div><div>Bummed that your cup can&rsquo;t be recycled? Bring your own mug or thermos! Not only is it more environmentally friendly, but coffee shops often give a discount!</div>",
+      "body": "<div>Coffee cups are usually constructed from <a style='color: #339966;' href='/components/categories/paper'>paper</a> and <a style='color: #339966;' href='/category/1'>plastic</a>.</div><div>Paper cups <strong>are not recyclable</strong> and must be thrown in the garbage.</div> <div>However, the lids on coffee cups can often be recycled. If the lid is white plastic and/or printed with plastic #6 recycling symbol it can be recycled. The cardboard sleeves can also be recycled.</div><div>Bummed that your cup can&rsquo;t be recycled? Bring your own mug or thermos! Not only is it more environmentally friendly, but coffee shops often give a discount!</div>",
       "categories": [
         "paper",
         "plastic"
