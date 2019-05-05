@@ -4,6 +4,7 @@ import Home from "./components/home/index";
 import Header from "./components/header/index";
 import Footer from "./components/footer/index";
 import Bottle from "./components/recyclables/bottle";
+import RecyclingMap from "./components/recyclingMap/index";
 
 class App extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/bottle" component={Bottle} />
+          <Route exact path="/recycling-map" component={RecyclingMap} />
         </Switch>
         <Footer />
       </>
