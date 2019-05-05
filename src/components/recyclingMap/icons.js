@@ -86,7 +86,7 @@ export default {
   }),
   bags: new L.Icon({
     name: "bags",
-    displayName: "Plastic Bag Disposal",
+    displayName: "Plastic Bags",
     iconUrl:
       "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png",
     shadowUrl:
