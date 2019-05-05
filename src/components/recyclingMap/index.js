@@ -76,7 +76,7 @@ class RecyclingMap extends Component {
               {Object.keys(icons).map(icon => {
                 return (
                   icon !== "home" && (
-                    <li key={icon} className="app__filter-item">
+                    <li key={icon} className={`app__filter-item ${this.state.filters.includes(icon) && "active"}`}>
                       <button
                         className="app__filter-button"
                         onClick={() =>
