@@ -20,9 +20,22 @@ class RecyclingMap extends Component {
   constructor() {
     super();
     this.state = {
-      zoom: 12,
+      zoom: 11,
       filters: []
     };
+  }
+
+  componentDidMount() {
+    if (this.props.history.location.state.prefilters) {
+      this.setState({ filters: this.props.history.location.state.prefilters });
+    }
+  }
+
+  //WARNING! To be deprecated in React v17. Use new lifecycle static getDerivedStateFromProps instead.
+  componentWillReceiveProps(nextProps) {
+    if (this.props.history.location.state.prefilters !== nextProps.history.location.state.prefilters) {
+      this.setState({ filters: this.props.history.location.state.prefilters });
+    }
   }
 
   handleFilter = filter => {
@@ -42,14 +55,14 @@ class RecyclingMap extends Component {
         <>
           <Helmet>
             <title>Recycling Map - pureMKE</title>
-            <meta name="description" content="Find a location near you to dispose of your recyclable materials." />
+            <meta
+              name="description"
+              content="Find a location near you to dispose of your recyclable materials."
+            />
           </Helmet>
-          <div class="app__map">
+          <div className="app__map">
             <Map
-              center={[
-                this.props.coords.latitude,
-                this.props.coords.longitude
-              ]}
+              center={[this.props.coords.latitude, this.props.coords.longitude]}
               zoom={this.state.zoom}
             >
               <TileLayer

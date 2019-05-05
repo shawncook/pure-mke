@@ -7,6 +7,8 @@ import IconCleaner from "../../img/icon-cleaner.svg";
 import IconOilSpill from "../../img/icon-oil-spill.svg";
 import IconResponsive from "../../img/icon-responsive.svg";
 import { ReactComponent as IconClose } from '../../img/icon-close.svg';
+import LinkButton from "../common/linkButton";
+
 
 import { Helmet } from "react-helmet";
 
@@ -44,6 +46,9 @@ export default class CategoryDetail extends React.PureComponent {
               <h1 className="categoryDetail__title">
                 {category.name}
               </h1>
+            </div>
+            <div>
+              <LinkButton to={{ pathname: "/recycling-map", state: { prefilters: ['bags']} }}>Recyle me</LinkButton>
             </div>
             <div
               className="categoryDetail__desc"
