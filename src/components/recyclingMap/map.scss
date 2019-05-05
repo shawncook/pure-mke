@@ -5,7 +5,9 @@
   width: 100vw;
 }
 
-.app__filters {}
+.app__filters {
+  background: $colorBackgroundMenu;
+}
 
 .app__filter-list {
   display: flex;
@@ -17,7 +19,7 @@
 
 .app__filter-item {
   list-style: none;
-  padding: 0;
+  padding: 5px 0;
 
   &.active {
     button {
@@ -31,7 +33,7 @@
 
   img {
     margin-right: $spacerStandard / 2;
-    width: 20px;
+    width: 16px;
   }
 }
 
@@ -40,6 +42,7 @@
   align-items: center;
   background: transparent;
   border: 0;
+  color: $colorWhite;
   display: flex;
   font-family: inherit;
   font-weight: 500;
