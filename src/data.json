@@ -16,7 +16,7 @@
       "id": 3,
       "name": "Glass",
       "slug": "glass",
-      "desc": "Clear Glass YES: All clear jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Brown Glass YES: All brown jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Green and Blue Glass YES: All green and blue jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues!"
+      "desc": "<h2>Clear Glass</h2> <p><b>YES:</b> All clear jars and bottles.</p><p><b> NO:</b> Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Brown Glass</p> YES: All brown jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues! Green and Blue Glass YES: All green and blue jars and bottles. NO: Vases, auto glass, ceramics (i.e. mugs, plates), light bulbs, mirrors, drinking glass, plates, plate glass, or Pyrex. These cause major contamination issues!"
     },
     {
       "id": 4,
@@ -48,12 +48,7 @@
       "name": "Bottle",
       "is_recyclable": true,
       "desc": "Bottles are commonly plastic or glass and are recycleable.",
-      "body": "<div> <div>Bottles are commonly <span style='color: #339966;'><a style='color: #339966;' href='/components/categories/plastic'>plastic</a></span> or <span style='color: #339966;''><a style='color: #339966;' href='/components/categories/glass'>glass</a>.</span></div><div>They can be recycled in common recycling bins or with your <span style='color: #339966;'><a style='color: #339966;' href='##'>regular recycling pick up</a>.</span></div><div>&nbsp;</div>
-      <div><strong>Leave lids on </strong></div>
-      <div>Because plastic lids and caps are small and might get mixed in with the wrong material in the sorting process if they are not attached to the larger bottle.</div>
-      <div>&nbsp;</div>
-      <div><strong>Leave labels on </strong></div>
-      <div>In the early days of recycling, labels were a problem, but this is no longer the case.</div> </div>",
+      "body": "<div> <div>Bottles are commonly<span style='color: #339966;'><a style='color: #339966;' href='/components/categories/plastic'>plastic</a></span> or <span style='color: #339966;''><a style='color: #339966;' href='/components/categories/glass'>glass</a>.</span></div><div>They can be recycled in common recycling bins or with your <span style='color: #339966;'><a style='color: #339966;' href='##'>regular recycling pick up</a>.</span></div><div>&nbsp;</div> <div><strong>Leave lids on </strong></div><div>Because plastic lids and caps are small and might get mixed in with the wrong material in the sorting process if they are not attached to the larger bottle.</div><div>&nbsp;</div><div><strong>Leave labels on </strong></div><div>In the early days of recycling, labels were a problem, but this is no longer the case.</div> </div>",
       "categories": [
         "plastic",
         "glass"
@@ -159,7 +154,7 @@
       "name": "Appliances",
       "is_recyclable": true,
       "desc": "Household appliances",
-      "body": "Appliances can be recycled at drop off locations but cannot be left curbside. If appliances are still in working condition, consider taking them to a donation center",
+      "body": "Appliances can be recycled at drop off locations but cannot be left curbside. Some appliances can be  If appliances are still in working condition, consider taking them to a donation center",
       "categories": [
         "metal",
         "plastic",
@@ -173,7 +168,8 @@
         "dryer",
         "dishwasher",
         "air conditioner"
-      ]
+      ],
+      "location":["donate","dropOff",""]
     },
     {
       "name": "Paint",
@@ -186,7 +182,8 @@
       "tags": [
         "varnish",
         "stain"
-      ]
+      ],
+      "location": ["dropOff","donate"]
     },
     {
       "name": "Cartons",
@@ -202,7 +199,8 @@
         "milk",
         "cream",
         "dairy"
-      ]
+      ],
+      "locations": ["localBin","curbside"]
     },
     {
       "name": "Phones and Computers",
