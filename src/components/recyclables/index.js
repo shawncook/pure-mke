@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Slugify from "../../utils/slugify";
 import data from "../../data.json";
-import Icon from '../../utils/icons';
+import Icon from "../../utils/icons";
 import { ReactComponent as IconClose } from "../../img/icon-close.svg";
 import LinkButton from "../common/linkButton";
 import "./recyclablesDetail.scss";
@@ -18,14 +18,13 @@ export default class RecyclablesDetail extends React.PureComponent {
    */
   render() {
     if (!this.props.match && !this.props.match.params) {
-      return (
-        <Fragment>Item not found</Fragment>
-      );
+      return <Fragment>Item not found</Fragment>;
     }
 
     const { onCloseItem } = this.props;
+
     const item = data.recyclables.find(
-      item => item.id === this.props.match.params.name
+      item => item.id == this.props.match.params.name
     );
     return (
       <Fragment>
@@ -35,10 +34,12 @@ export default class RecyclablesDetail extends React.PureComponent {
         </Helmet>
         <div className="app">
           <div className={`categoryDetail ${Slugify(item.name)}`}>
-            <Link to="/">
-              <button onClick={onCloseItem}>
-                <IconClose />
-              </button>
+            <Link
+              className="categoryDetail__close-button"
+              to="/"
+              onClick={onCloseItem}
+            >
+              <IconClose />
             </Link>
             <div className="categoryDetail__wrapper">
               <div className="categoryDetail__header">

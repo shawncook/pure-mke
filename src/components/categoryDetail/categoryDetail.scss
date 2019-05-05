@@ -1,5 +1,5 @@
-@import '../../theme.scss';
-@import '../../mixins.scss';
+@import "../../theme.scss";
+@import "../../mixins.scss";
 
 .categoryDetail {
   background: $colorWhite;
@@ -29,13 +29,16 @@
   flex-flow: column;
   text-align: center;
 
-  @media (min-width: map-get($breakpoints, 'tablet')) {
+  @media (min-width: map-get($breakpoints, "tablet")) {
     flex-flow: row;
     justify-content: center;
     margin-bottom: $spacerStandard * 2;
     margin-right: auto;
     text-align: left;
   }
+}
+
+.categoryDetail__link {
 }
 
 .categoryDetail__title {
@@ -45,26 +48,26 @@
   font-weight: 300;
   margin-bottom: $spacerStandard / 2;
 
-  @media (min-width: map-get($breakpoints, 'tablet')) {
+  @media (min-width: map-get($breakpoints, "tablet")) {
     @include font-step-up-3;
     margin-bottom: 0;
   }
 }
 
 .categoryDetail__desc {
-  @import '../../rich-text';
+  @import "../../rich-text";
   color: $colorSoftBlack;
   flex-basis: 100%;
 }
 
 .categoryDetail__image {
-  content: '';
+  content: "";
   display: block;
   height: 80px;
   margin: 0 auto $spacerStandard;
   width: 80px;
 
-  @media (min-width: map-get($breakpoints, 'tablet')) {
+  @media (min-width: map-get($breakpoints, "tablet")) {
     margin: 0 0 0 ($spacerStandard * 2);
     height: 60px;
     width: 60px;
