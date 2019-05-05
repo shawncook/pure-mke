@@ -76,12 +76,9 @@ class RecyclingMap extends Component {
                       >
                         <Popup minWidth={90}>
                           <span onClick={this.toggleDraggable}>
-                            {location.name} <br />
+                            <strong>{location.name} </strong> <br />
                             {location.address} <br />
-                            {location.city}
-                            <br />
-                            {location.state}
-                            <br />
+                            {location.city},{location.state}
                             {location.zip}
                           </span>
                         </Popup>
@@ -93,12 +90,17 @@ class RecyclingMap extends Component {
             <div>
               {Object.keys(icons).map(icon => {
                 return (
-                  <span
-                    onClick={() => this.handleFilter(icons[icon].options.name)}
-                  >
-                    <img src={icons[icon].options.iconUrl} />{" "}
-                    {icons[icon].options.name}
-                  </span>
+                  icon !== "home" && (
+                    <span
+                      key={icon}
+                      onClick={() =>
+                        this.handleFilter(icons[icon].options.name)
+                      }
+                    >
+                      <img src={icons[icon].options.iconUrl} />
+                      {icons[icon].options.displayName}
+                    </span>
+                  )
                 );
               })}
             </div>

@@ -26,6 +26,7 @@ export default {
   }),
   dropOff: new L.Icon({
     name: "dropOff",
+    displayName: "Drop-off Locations",
     iconUrl:
       "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png",
     shadowUrl:
@@ -37,6 +38,7 @@ export default {
   }),
   retailer: new L.Icon({
     name: "retailer",
+    displayName: "Retailers",
     iconUrl:
       "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png",
     shadowUrl:
@@ -48,6 +50,7 @@ export default {
   }),
   eWaste: new L.Icon({
     name: "eWaste",
+    displayName: "Electronic Waste",
     iconUrl:
       "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png",
     shadowUrl:
@@ -59,6 +62,7 @@ export default {
   }),
   ecoAtm: new L.Icon({
     name: "ecoAtm",
+    displayName: "Eco ATMs",
     iconUrl:
       "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png",
     shadowUrl:
@@ -70,6 +74,7 @@ export default {
   }),
   localBin: new L.Icon({
     name: "localBin",
+    displayName: "Local Bins",
     iconUrl:
       "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png",
     shadowUrl:
@@ -81,6 +86,7 @@ export default {
   }),
   bags: new L.Icon({
     name: "bags",
+    displayName: "Plastic Bag Disposal",
     iconUrl:
       "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-black.png",
     shadowUrl:
