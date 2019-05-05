@@ -86,6 +86,57 @@
         "phone",
         "alkaline"
       ]
+    },
+    {
+      "name":"Oil",
+      "is_recyclable": true,
+      "desc": "Motor Oil and Cooking oil",
+      "body": "Motor Oil Motor oil and filters can be recycled when taken to a drop off center.  Do not throw these items in the garbage or recycling cart. Cooking Oil Can be recycled at drop off centers. Cooking oil can be thrown away in your garbage cart, but we suggest recycling it. ",
+      "categories": [
+        "other"
+      ],
+      "tags":[
+        "car",
+        "automobile",
+        "cooking",
+        "vegetable",
+        "frying"
+      ]
+    },
+    {
+      "name": "Plastic Bag",
+      "is_recyclable": true,
+      "desc": "Plastic bags and other plastic films",
+      "body": "The City of Milwaukee does not accept plastic bags through its curbside recycling program. However Plastic Bags can be recycled at certain retail locations like Kohl’s, Pick n Save, Walmart, and Target. Accepted materials at such locations include plastic grocery bags, deflated packing pillows, produce bags, plastic wrap used to package toilet paper or paper towel, dry cleaning bags, and more! For a complete list of locations and information visit plasticfilmrecycling.org",
+      "categories": ["plastic"],
+      "tags": [
+        "plastic",
+        "bag",
+        "bags",
+        "wrap",
+        "plastic wrap",
+        "shopping",
+        "packaging",
+        "katy perry"
+      ]    
+    },
+    {
+      "name": "Coffee Cup",
+      "is_recyclable": false,
+      "desc": "To go Coffee Cups",
+      "body": "Coffee cups are usually constucted from paper and plastic Paper cups are not recycleable and must be thrown in the garbage. However, the lids on coffee cups can often be recycled. If the lid is white plastic and/or printed with plastic #6 recycling symbol it can be recycled. The cardboard sleeves can also be recycled. Bummed that your cup can’t be recycled? Bring your own mug or thermos! Not only is it more environmentally friendly, but coffee shops often give a discount. ",
+      "categories":[
+        "paper",
+        "plastic"
+      ],
+      "tags":[
+        "drink",
+        "tea",
+        "paper cup"
+      ]
+    },
+    {
+      
     }
   ]
 }
