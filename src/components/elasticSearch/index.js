@@ -27,9 +27,14 @@ class ElasticSearch extends Component {
           credentials="8fOyBlB93:f94865a6-c27a-4d4f-a4b4-e2cc337c6960"
         >
           <DataSearch
+            className="search__input"
+            innerClass={{
+              input: 'search__input-field'
+            }}
             componentId="search"
             dataField={["name", "tags"]}
             fuzziness={0}
+            placeholder="What item are you trying to recycle?"
             render={({
               //loading, // `true` means the query is still in progress
               //error, // error info

@@ -3,6 +3,7 @@
 
 .search {
   margin-bottom: $spacerStandard;
+  position: relative;
 
   label {
     @include screenreaderOnly;
@@ -17,7 +18,19 @@
 }
 
 .search__list {
+  background-color: $colorWhite;
+  border-color: $colorBorderLight;
+  border-style: solid;
+  border-width: 8px 0;
+  max-height: 400px;
+  overflow: auto;
   padding: 0;
+  position: absolute;
+  width: 100%;
+
+  &:empty {
+    display: none;
+  }
 }
 
 .search__item {
@@ -27,4 +40,41 @@
   list-style: none;
   margin: 0;
   padding: $spacerStandard;
+}
+
+.search__input {
+  position: relative;
+}
+
+input.search__input-field {
+  @include font-step-up-1;
+  background: $colorBackgroundInput;
+  border-radius: 40px;
+  display: block;
+  margin: 0 auto;
+  max-width: calc(100% - #{$spacerStandard * 2});
+  padding: 0 $spacerStandard 0 46px;
+
+  &::placeholder {
+    @include font-step-down-1;
+    color: darken($colorBackgroundInputDark, 10%);
+    line-height: 40px;
+  }
+
+  &:focus {
+    background: $colorBackgroundInput;
+  }
+
+  & + div {
+    position: absolute;
+    left: $spacerStandard * 1.5;
+    top: $spacerStandard;
+
+    svg.search-icon {
+      fill: darken($colorBackgroundInputDark, 20%);
+      height: 20px;
+      vertical-align: middle;
+      width: 20px;
+    }
+  }
 }
