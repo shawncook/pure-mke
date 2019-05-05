@@ -33,6 +33,8 @@ class RecyclingMap extends Component {
       this.props.history.location.state.prefilters
     ) {
       this.setState({ filters: this.props.history.location.state.prefilters });
+    } else {
+      this.setState({ filters: [...Object.keys(icons)] })
     }
   }
 
