@@ -60,7 +60,7 @@ export default class CategoryDetail extends React.PureComponent {
               <h3>Items:</h3>
               <ul>
                 {items.map(item => (
-                  <Link to={`/item/${item.id}`}>
+                  <Link key={item.id} to={`/item/${item.id}`}>
                     {" "}
                     <li key={item.id}>{item.name}</li>
                   </Link>
