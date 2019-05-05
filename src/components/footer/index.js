@@ -1,12 +1,13 @@
 import React, { Component } from "react";
+import './footer.scss';
 
 class Footer extends Component {
   state = {};
   render() {
     return (
-      <>
-        <footer>This is a Footer</footer>
-      </>
+      <footer className="app__footer">
+        #LiftUpMKE
+      </footer>
     );
   }
 }

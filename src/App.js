@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./components/home/index";
 import Header from "./components/header/index";
-import Footer from "./components/footer.js/index";
+import Footer from "./components/footer/index";
 import Bottle from "./components/recyclables/bottle";
 
 class App extends React.Component {

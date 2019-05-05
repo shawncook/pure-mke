@@ -1,0 +1,15 @@
+@import '../../theme.scss';
+@import '../../mixins.scss';
+
+.app__footer {
+  @include font-step-down-1;
+  color: $colorTextLight;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: $spacerStandard;
+  margin-top: $spacerStandard;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
