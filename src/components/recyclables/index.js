@@ -43,9 +43,9 @@ export default class RecyclablesDetail extends React.PureComponent {
             </Link>
             <div className="categoryDetail__wrapper">
               <div className="categoryDetail__header">
-                <div className="categoryDetail__image">
+                {/*<div className="categoryDetail__image">
                   <Icon width={100} name={Slugify(item.name)} />
-                </div>
+    </div>*/}
                 <h1 className="categoryDetail__title">{item.name}</h1>
               </div>
               <div>
