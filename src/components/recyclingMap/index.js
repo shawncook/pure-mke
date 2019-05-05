@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import { geolocated } from "react-geolocated";
 import icons from "./icons";
+import { Helmet } from "react-helmet";
 import locations from "../../locations.json";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -38,6 +39,10 @@ class RecyclingMap extends Component {
     return (
       this.props.coords && (
         <>
+          <Helmet>
+            <title>Recycling Map - pureMKE</title>
+            <meta name="description" content="Find a location near you to dispose of your recyclable materials." />
+          </Helmet>
           <div>
             <div>
               <Map
