@@ -1,3 +1,47 @@
+@import '../../theme.scss';
+@import '../../mixins.scss';
+
 .app__map {
   width: 100vw;
+}
+
+.app__filters {}
+
+.app__filter-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  overflow-x: auto;
+  padding-left: 0;
+}
+
+.app__filter-item {
+  list-style: none;
+  padding: 0;
+
+  &.active {
+    button {
+      color: rgba($colorSoftBlack, 0.5);
+    }
+
+    img {
+      opacity: 0.5;
+    }
+  }
+
+  img {
+    margin-right: $spacerStandard / 2;
+    width: 20px;
+  }
+}
+
+.app__filter-button {
+  @include font-step-down-1;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  display: flex;
+  font-family: inherit;
+  font-weight: 500;
+  position: relative;
 }

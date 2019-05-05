@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Fragment, Component } from "react";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import { geolocated } from "react-geolocated";
 import icons from "./icons";
@@ -63,7 +63,7 @@ class RecyclingMap extends Component {
   render() {
     return (
       this.props.coords && (
-        <>
+        <Fragment>
           <Helmet>
             <title>Recycling Map - pureMKE</title>
             <meta
@@ -71,6 +71,30 @@ class RecyclingMap extends Component {
               content="Find a location near you to dispose of your recyclable materials."
             />
           </Helmet>
+          <div className="app__filters">
+            <ul className="app__filter-list">
+              {Object.keys(icons).map(icon => {
+                return (
+                  icon !== "home" && (
+                    <li key={icon} className="app__filter-item">
+                      <button
+                        className="app__filter-button"
+                        onClick={() =>
+                          this.handleFilter(icons[icon].options.name)
+                        }
+                      >
+                        <img
+                          alt={icons[icon].options.displayName}
+                          src={icons[icon].options.iconUrl}
+                        />
+                        {icons[icon].options.displayName}
+                      </button>
+                    </li>
+                  )
+                );
+              })}
+            </ul>
+          </div>
           <div className="app__map">
             <Map
               center={[this.props.coords.latitude, this.props.coords.longitude]}
@@ -117,30 +141,7 @@ class RecyclingMap extends Component {
               })}
             </Map>
           </div>
-          <div>
-            <ul>
-              {Object.keys(icons).map(icon => {
-                return (
-                  icon !== "home" && (
-                    <li key={icon}>
-                      <span
-                        onClick={() =>
-                          this.handleFilter(icons[icon].options.name)
-                        }
-                      >
-                        <img
-                          alt={icons[icon].options.displayName}
-                          src={icons[icon].options.iconUrl}
-                        />
-                        {icons[icon].options.displayName}
-                      </span>
-                    </li>
-                  )
-                );
-              })}
-            </ul>
-          </div>
-        </>
+        </Fragment>
       )
     );
   }
