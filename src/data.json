@@ -134,7 +134,8 @@
         "drink",
         "tea",
         "paper cup"
-      ]
+      ],
+      "location"
     },
     {
       "name": "cans",
@@ -148,13 +149,14 @@
         "spray",
         "tin",
         "food"
-      ]
+      ],
+      "location":["localBin","curbside"]
     },
     {
       "name": "Appliances",
       "is_recyclable": true,
       "desc": "Household appliances",
-      "body": "Appliances can be recycled at drop off locations but cannot be left curbside. Some appliances can be  If appliances are still in working condition, consider taking them to a donation center",
+      "body": "Appliances can be recycled at drop off locations but cannot be left curbside. Some retailers, such as Best Buy, offer appliance recycling pick up for a small fee.  If appliances are still in working condition, consider taking them to a donation center",
       "categories": [
         "metal",
         "plastic",
@@ -167,9 +169,12 @@
         "washing machine",
         "dryer",
         "dishwasher",
-        "air conditioner"
+        "air conditioner",
+        "vacuum",
+        "fan",
+        "power washer"
       ],
-      "location":["donate","dropOff",""]
+      "location":["donate","dropOff","retail"]
     },
     {
       "name": "Paint",
@@ -200,7 +205,7 @@
         "cream",
         "dairy"
       ],
-      "locations": ["localBin","curbside"]
+      "location": ["localBin","curbside"]
     },
     {
       "name": "Phones and Computers",
@@ -217,7 +222,8 @@
         "PC",
         "macbook",
         "iphone"
-      ]
+      ],
+      "location":["retail","dropOff","ecoAtm"]
     },
     {
       "name": "Writing Utinsils"
