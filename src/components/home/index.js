@@ -56,7 +56,7 @@ class Home extends React.Component {
                 return (
                   <li className="app__category" key={item.name}>
                     <div className="app__category-wrapper">
-                      <Link to={`/category/${item.id}`}>
+                      <Link className="app__category-title" to={`/category/${item.id}`}>
                         <div className="app__category-image">
                           <Icon width={100} name={Slugify(item.name)} />
                         </div>
