@@ -9,6 +9,11 @@
   width: 1px;
 }
 
+@mixin font-step-down-1 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 @mixin font-base {
   font-size: 17px;
   line-height: 25px;

@@ -1,0 +1,15 @@
+@import '../../theme.scss';
+@import '../../mixins.scss';
+
+.app__branding a {
+  display: table;
+  height: 80px;
+  margin: 0 auto;
+  width: 80px;
+
+  img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+  }
+}
