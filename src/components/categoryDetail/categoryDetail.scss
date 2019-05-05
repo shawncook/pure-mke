@@ -6,19 +6,20 @@
   display: flex;
   flex-direction: column;
   padding: $spacerStandard * 2;
+}
 
-  button {
-    background: none;
-    border: none;
-    font: inherit;
-    height: $buttonWidth;
-    margin-left: auto;
-    padding: 0;
-    width: $buttonWidth;
+.categoryDetail__close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  height: $buttonWidth;
+  margin-left: auto;
+  padding: 0;
+  width: $buttonWidth;
 
-    path {
-      stroke: $colorBlack;
-    }
+  path {
+    stroke: $colorSoftBlack;
   }
 }
 
@@ -30,6 +31,8 @@
 
   @media (min-width: map-get($breakpoints, 'tablet')) {
     flex-flow: row;
+    justify-content: center;
+    margin-bottom: $spacerStandard * 2;
     margin-right: auto;
     text-align: left;
   }
@@ -37,7 +40,10 @@
 
 .categoryDetail__title {
   @include header-font;
+  color: $colorSoftBlack;
   display: inline-block;
+  font-weight: 300;
+  margin-bottom: 0;
 
   @media (min-width: map-get($breakpoints, 'tablet')) {
     @include font-step-up-3;
@@ -46,6 +52,7 @@
 
 .categoryDetail__desc {
   @import '../../rich-text';
+  color: $colorSoftBlack;
   flex-basis: 100%;
 }
 
@@ -57,9 +64,9 @@
   width: 80px;
 
   @media (min-width: map-get($breakpoints, 'tablet')) {
-    margin: 0;
-    height: 120px;
-    width: 120px;
+    margin: 0 0 0 ($spacerStandard * 2);
+    height: 60px;
+    width: 60px;
   }
 
   svg {
