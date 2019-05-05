@@ -66,8 +66,8 @@ class RecyclingMap extends Component {
                   </Popup>
                 </Marker>
                 {locations.map((location, i) => {
-                  if (this.state.filters.includes(location.style))
-                    return (
+                  return (
+                    this.state.filters.includes(location.style) && (
                       <Marker
                         key={`${location.name}-${i}`}
                         draggable={false}
@@ -83,26 +83,33 @@ class RecyclingMap extends Component {
                           </span>
                         </Popup>
                       </Marker>
-                    );
+                    )
+                  );
                 })}
               </Map>
             </div>
             <div>
-              {Object.keys(icons).map(icon => {
-                return (
-                  icon !== "home" && (
-                    <span
-                      key={icon}
-                      onClick={() =>
-                        this.handleFilter(icons[icon].options.name)
-                      }
-                    >
-                      <img src={icons[icon].options.iconUrl} />
-                      {icons[icon].options.displayName}
-                    </span>
-                  )
-                );
-              })}
+              <ul>
+                {Object.keys(icons).map(icon => {
+                  return (
+                    icon !== "home" && (
+                      <li key={icon}>
+                        <span
+                          onClick={() =>
+                            this.handleFilter(icons[icon].options.name)
+                          }
+                        >
+                          <img
+                            alt={icons[icon].options.displayName}
+                            src={icons[icon].options.iconUrl}
+                          />
+                          {icons[icon].options.displayName}
+                        </span>
+                      </li>
+                    )
+                  );
+                })}
+              </ul>
             </div>
           </div>
         </>
