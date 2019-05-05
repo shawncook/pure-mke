@@ -24,10 +24,14 @@
   line-height: 30px;
 }
 
+@mixin font-step-up-2 {
+  font-size: 26px;
+  line-height: 33px;
+}
+
 @mixin header-font {
-  font-size: rem(28px);
+  @include font-step-up-2;
   font-weight: 700;
-  line-height: rem(33px);
   margin: 0 0 ($spacerStandard / 2);
   text-transform: uppercase;
 }

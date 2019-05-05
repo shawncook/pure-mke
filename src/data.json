@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Plastic",
       "slug": "plastic",
-      "desc": "To determine the type of plastic, look at the bottom of the container for a number inside the triangle recycling symbol. Please rinse containers and remove lids. #1 PETE Plastic YES: #1 plastic containers (eg. soda and water bottles). NO: Plastic bags, plastics #2, 3, 4, 5, 6, and 7, polystyrene (Styrofoam), or any unlabeled plastic. Clear #2 HDPE Plastic YES: #2 clear plastic containers (eg. milk and juice jugs). NO: Plastic bags, plastics #1, 3, 4, 5, 6, and 7, polystyrene (Styrofoam), or any unlabeled plastic. Colored #2 HDPE Plastic and Plastics #3 - #7 YES: White or colored plastics labeled #2 HDPE (eg. laundry detergent bottles), plastic bottles and containers labeled #3 (V), #4 (LDPE), #5 (PP), #6 (PS), and #7 (Other). NO: Plastic bags, expanded polystyrene (aka Styrofoam), or any unlabeled plastic. Plastic Bags YES: Clean plastic grocery or merchandise bags, dry cleaning bags, and bubble wrap. NO: Foam, rigid containers, paper, food or liquids, polystyrene packaging, strapping, or twine."
+      "desc": "<p>To determine the type of plastic, look at the bottom of the container for a number inside the triangle recycling symbol. Please rinse containers and remove lids.</p><h2>#1 PETE Plastic</h2><p><b>YES:</b> #1 plastic containers (eg. soda and water bottles).</p><p><b>NO:</b> Plastic bags, plastics #2, 3, 4, 5, 6, and 7, polystyrene (Styrofoam), or any unlabeled plastic.</p><h2> Clear #2 HDPE Plastic</h2><p><b>YES:</b> #2 clear plastic containers (eg. milk and juice jugs).</p><p><b>NO:</b> Plastic bags, plastics #1, 3, 4, 5, 6, and 7, polystyrene (Styrofoam), or any unlabeled plastic.</p><h2> Colored #2 HDPE Plastic and Plastics #3 - #7 </h2> <p><b>YES:<b/> White or colored plastics labeled #2 HDPE (eg. laundry detergent bottles), plastic bottles and containers labeled #3 (V), #4 (LDPE), #5 (PP), #6 (PS), and #7 (Other).</p><p><b>NO:</b> Plastic bags, expanded polystyrene (aka Styrofoam), or any unlabeled plastic.</p><h2>Plastic Bags</h2><p><b>YES:</b> Clean plastic grocery or merchandise bags, dry cleaning bags, and bubble wrap.</p><b>NO:</b> Foam, rigid containers, paper, food or liquids, polystyrene packaging, strapping, or twine.</p>"
     },
     {
       "id": 2,
@@ -211,6 +211,9 @@
         "macbook",
         "iphone"
       ]
+    },
+    {
+      "name": "Writing Utinsils"
     }
   ]
 }

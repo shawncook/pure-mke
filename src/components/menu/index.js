@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { slide as HamburgerMenu } from "react-burger-menu";
 import { Link } from "react-router-dom";
+import IconFlag from '../../img/flag.svg';
+import { ReactComponent as IconClose } from '../../img/icon-close.svg';
 import "./menu.scss";
 
 class Menu extends Component {
@@ -37,7 +39,17 @@ class Menu extends Component {
         bodyClassName={"menu-open"}
         className={"app__menu"}
         burgerButtonClassName={"app__menu-button"}
+        styles={{
+          bmMenu: {
+            backgroundImage: `url(${IconFlag})`
+          }
+        }}
       >
+        <button
+          onClick={() => this.closeMenu()}
+        >
+          <IconClose />
+        </button>
         <Link onClick={() => this.closeMenu()} to="/">
           Home
         </Link>
