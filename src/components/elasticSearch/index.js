@@ -46,7 +46,6 @@ class ElasticSearch extends Component {
               </ul>
             )}
           />
-          )}
         </ReactiveBase>
       </div>
     );
