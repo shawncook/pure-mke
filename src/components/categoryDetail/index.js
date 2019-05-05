@@ -17,9 +17,17 @@ export default class CategoryDetail extends React.PureComponent {
    * @returns {object} Component markup.
    */
   render() {
-    const { category, onCloseCategory } = this.props;
+    if (!this.props.match && !this.props.match.params) {
+      return <Fragment>Category not found</Fragment>;
+    }
+
+    const { onCloseCategory } = this.props;
     const items = data.recyclables.filter(
       item => item.categories && item.categories.includes(category.slug)
+    );
+
+    const category = data.categories.find(
+      item => item.id == this.props.match.params.id
     );
     return (
       <Fragment>
@@ -30,7 +38,7 @@ export default class CategoryDetail extends React.PureComponent {
         <div className={`categoryDetail ${Slugify(category.name)}`}>
           <button
             className="categoryDetail__close-button"
-            onClick={() => onCloseCategory()}
+            onClick={onCloseCategory}
           >
             <IconClose />
           </button>

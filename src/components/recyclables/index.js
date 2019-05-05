@@ -24,7 +24,7 @@ export default class RecyclablesDetail extends React.PureComponent {
     const { onCloseItem } = this.props;
 
     const item = data.recyclables.find(
-      item => item.id == this.props.match.params.name
+      item => item.id == this.props.match.params.id
     );
     return (
       <Fragment>
