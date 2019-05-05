@@ -13,16 +13,16 @@ export default class Resources extends React.PureComponent {
         <div className="app">
           <p>Content</p>
           <p>
-            <Link to="https://city.milwaukee.gov/mpw/divisions/operations/environmental/sanitation/DropOff#.XM79l5NKgWo">Drop Off Locations</Link>
+            <a target="_blank" href="https://city.milwaukee.gov/mpw/divisions/operations/environmental/sanitation/DropOff#.XM79l5NKgWo">Drop Off Locations</a>
           </p>
           <p>
-            <Link to="https://city.milwaukee.gov/mpw/divisions/operations/sanitationoperations#.XM79q5NKgWo">Milwaukee Sanitation Services</Link>
+            <a target="_blank" href="https://city.milwaukee.gov/mpw/divisions/operations/sanitationoperations#.XM79q5NKgWo">Milwaukee Sanitation Services</a>
           </p>
           <p>
-            <Link to="https://city.milwaukee.gov/mpw/divisions/operations/environmental/sanitation/GarbageRecyclingSchedules.htm#.XM79wJNKgWo">Find you Recycling Pick Up Date</Link>
+            <a target="_blank" href="https://city.milwaukee.gov/mpw/divisions/operations/environmental/sanitation/GarbageRecyclingSchedules.htm#.XM79wJNKgWo">Find you Recycling Pick Up Date</a>
           </p>
           <p>
-            <Link to="https://city.milwaukee.gov/recycles">City of Milwaukee Recycling Info Page</Link>
+            <a target="_blank" href="https://city.milwaukee.gov/recycles">City of Milwaukee Recycling Info Page</a>
           </p>
         </div>
       </Fragment>
