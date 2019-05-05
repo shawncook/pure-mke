@@ -16,22 +16,34 @@
       text-decoration: underline;
     }
   }
+
+  > div {
+    height: 0;
+  }
 }
 
 .app__menu-button {
-  height: 40px;
-  top: $spacerStandard;
+  height: 20px;
   left: $spacerStandard;
   position: relative;
-  width: 40px;
+  right: auto;
+  top: $spacerStandard;
+  width: 30px;
+
+  @media (min-width: map-get($breakpoints, 'desktop')) {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .bm-burger-bars {
-  background: $colorMenuBackground;
+  background: $colorWhite;
+  border-radius: 3px;
+  width: 100%;
 }
 
 .bm-menu {
   background: $colorMenuBackground;
-  padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  padding: 2.5em 1.5em 0;
 }

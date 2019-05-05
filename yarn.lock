@@ -7398,6 +7398,12 @@ react-error-overlay@^5.1.5:
   version "5.1.5"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.5.tgz#884530fd055476c764eaa8ab13b8ecf1f57bbf2c"
 
+react-geolocated@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/react-geolocated/-/react-geolocated-2.4.1.tgz#71b270b3244ad36ace9b872b3e2b9119162566e4"
+  dependencies:
+    prop-types "^15.5.8"
+
 react-highlight-words@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/react-highlight-words/-/react-highlight-words-0.14.0.tgz#a1a40ff0a49ce78e7feb375a4e0a5fd1ca9c9609"

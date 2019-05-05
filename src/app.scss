@@ -31,9 +31,13 @@ body {
 .app__category {
   background: $colorWhite;
   cursor: pointer;
-  flex-basis: calc((100% / 2) - #{$spacerStandard / 2});
+  flex-basis: 100%;
   list-style: none;
   margin-bottom: 1em;
+
+  @media (min-width: map-get($breakpoints, 'tablet')) {
+    flex-basis: calc((100% / 2) - #{$spacerStandard / 2});
+  }
 }
 
 .app__category-wrapper {

@@ -1,11 +1,25 @@
 @import '../../theme.scss';
 @import '../../mixins.scss';
 
+.app__header {
+  background: $colorBackgroundHeader;
+}
+
+.app__branding {
+  margin: 0 $spacerStandard;
+  padding: ($spacerStandard / 4) 0;
+}
+
 .app__branding a {
   display: table;
-  height: 80px;
+  height: 40px;
   margin: 0 auto;
-  width: 80px;
+  width: 40px;
+
+  @media (min-width: map-get($breakpoints, 'desktop')) {
+    height: 80px;
+    width: 80px;
+  }
 
   img {
     display: block;
