@@ -53,18 +53,21 @@ class Menu extends Component {
         <Link onClick={() => this.closeMenu()} to="/">
           Home
         </Link>
-        <Link onClick={() => this.closeMenu()} to="/logo-discounts">
-          Local Rewards
-        </Link>
         <Link onClick={() => this.closeMenu()} to="/recycling-map">
           Recycling Map
         </Link>
-        <Link onClick={() => this.closeMenu()} to="/about-us">
-          About
+        <Link onClick={() => this.closeMenu()} to="/logo-discounts">
+          Local Rewards
         </Link>
+    
         <Link onClick={() => this.closeMenu()} to="/resources">
           Resources
         </Link>
+
+        <Link onClick={() => this.closeMenu()} to="/about-us">
+          About
+        </Link>
+        
       </HamburgerMenu>
     );
   }

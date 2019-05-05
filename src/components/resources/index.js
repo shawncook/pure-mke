@@ -10,7 +10,7 @@ export default class Resources extends React.PureComponent {
           <meta name="description" content="Pure MKE Resources page" />
         </Helmet>
         <div className="app">
-          <p>Content</p>
+          <p>Additional Information</p>
           <p>
             <a target="_blank" href="https://city.milwaukee.gov/mpw/divisions/operations/environmental/sanitation/DropOff#.XM79l5NKgWo">Drop Off Locations</a>
           </p>
