@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { ReactiveBase, DataSearch } from "@appbaseio/reactivesearch";
 import "./search.scss";
 import { Link } from "react-router-dom";
-import slugify from "../../utils/slugify";
 
 class ElasticSearch extends Component {
   _isMounted = false;
