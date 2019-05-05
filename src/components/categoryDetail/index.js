@@ -27,21 +27,24 @@ export default class CategoryDetail extends React.PureComponent {
           className={`categoryDetail ${Slugify(category.name)}`}
         >
           <button
+            className="categoryDetail__close-button"
             onClick={() => onCloseCategory()}
           >
             <IconClose />
           </button>
           <div className="categoryDetail__wrapper">
             <div className="categoryDetail__header">
-              <div className="categoryDetail__image">
-                <Icon width={100} name={Slugify(category.name)} />
-              </div>
               <h1 className="categoryDetail__title">
                 {category.name}
               </h1>
+              <div className="categoryDetail__image">
+                <Icon width={100} name={Slugify(category.name)} />
+              </div>
             </div>
             <div>
-              <LinkButton to={{ pathname: "/recycling-map", state: { prefilters: ['bags']} }}>Recyle me</LinkButton>
+              <LinkButton to={{ pathname: "/recycling-map", state: { prefilters: ['bags']} }}>
+                I want to recycle this!
+              </LinkButton>
             </div>
             <div
               className="categoryDetail__desc"

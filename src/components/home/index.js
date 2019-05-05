@@ -7,16 +7,19 @@ import ElasticSearch from "../elasticSearch/index";
 import Helmet from "react-helmet";
 import Icon from '../../utils/icons';
 import './home.scss';
+import RecyclablesDetail from "../recyclables";
 
 class Home extends React.Component {
   constructor() {
     super();
     this.state = {
       activeCategory: false,
+      activeItem:false,
       searchItem: ""
     };
     this.onCategoryClick = this.onCategoryClick.bind(this);
     this.onCloseCategory = this.onCloseCategory.bind(this);
+    this.onCloseItem = this.onCloseItem.bind(this);
   }
 
   onCategoryClick(category) {
@@ -31,8 +34,15 @@ class Home extends React.Component {
     });
   }
 
+  onCloseItem() {
+    this.setState({
+      activeItem: false
+    });
+  }
+
+
   render() {
-    const { activeCategory } = this.state;
+    const { activeCategory, activeItem } = this.state;
     const categories = data.categories;
     return (
       <Fragment>
@@ -46,12 +56,12 @@ class Home extends React.Component {
         <div
           className="app"
         >
-          {!activeCategory && (
+          {!activeCategory && !activeItem && (
             <ElasticSearch
-              onClick={this.onSearchItemClick}
+              onClick={this.onItemClick}
             />
           )}
-          {!activeCategory && 0 < categories.length && (
+          {!activeCategory && !activeItem && 0 < categories.length && (
             <ul
               className="app__categories"
             >
@@ -85,6 +95,12 @@ class Home extends React.Component {
             <CategoryDetail
               category={activeCategory}
               onCloseCategory={this.onCloseCategory}
+            />
+          )}
+
+          {activeItem && (
+            <RecyclablesDetail
+              onCloseItem={this.onCloseItem}
             />
           )}
         </div>
