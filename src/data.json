@@ -48,7 +48,8 @@
     {
       "name": "Bottle",
       "is_recyclable": true,
-      "desc": "Yes it's recyclable and here's why!",
+      "desc": "Bottles are commonly plastic or glass and are recycleable.",
+      "body": "Bottles are commonly plastic or glass. They can be recycled in common recycling bins or with your regular recycling pick up. Leave lids on because plastic lids and caps are small and might get mixed in with the wrong material in the sorting process if they are not attached to the larger bottle. Leave labels on In the early days of recycling, labels were a problem, but this is no longer the case.",
       "categories": [
         "plastic",
         "glass"
@@ -75,6 +76,7 @@
       "name": "Battery",
       "is_recyclable": true,
       "desc": "Car or phone battery?! Sure!",
+      "body": "Alkaline Batteries (Single use) Single-use batteries (A, AA, AAA, C, D, etc.) can be thrown out in your regular garbage or can be recycled for a fee through a variety of mail in programs or local retail drop offs. Recycling these batteries through mail-in or retail drop off programs can recover steel and zinc. Never put these batteries in your recycling cart. Car Batteries (Lead Acid Batteries) Can be recycled. Take to recycling drop off location or often vendors that sell car batteries will offer a discount to take in and recycle old ones. Do not throw in the garbage or household recycling pick up, in the state of Wisconsin lead-acid batteries must be recycled. Phone Batteries and other Recharageable Batteries. Rechargeable batteries (NiCd, NiMH, NiZn, Li-ion, SSLA/Pb) Can be taken to stores like office depot, best buy, or UPS store locations to be recycled.For a complete list visit Call 2 Recycle's database. Rechargeable batteries contain toxic chemistries and should be recycled instead of being placed in the garbage.",
       "categories": [
         "electronic",
         "other"
