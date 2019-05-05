@@ -28,7 +28,6 @@ class ElasticSearch extends Component {
                   <li
                     key={element.value}
                     className="search__item"
-                    onClick={() => this.props.onClick(element.source.name)}
                   >
                     <Link to={`/${element.source.name.toLowerCase()}`}>
                       <span className="search__item-title">
