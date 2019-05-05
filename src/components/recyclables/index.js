@@ -51,7 +51,7 @@ export default class RecyclablesDetail extends React.PureComponent {
                     state: { prefilters: item.location }
                   }}
                 >
-                  Recyle me
+                  Where Can I Recycle This?
                 </LinkButton>
               </div>
               <div
