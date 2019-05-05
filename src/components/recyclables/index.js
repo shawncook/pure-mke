@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import Slugify from "../../utils/slugify";
 import data from "../../data.json";
-import Icon from "../../utils/icons";
 import { ReactComponent as IconClose } from "../../img/icon-close.svg";
 import LinkButton from "../common/linkButton";
 import "./recyclablesDetail.scss";
@@ -43,9 +42,6 @@ export default class RecyclablesDetail extends React.PureComponent {
             </Link>
             <div className="categoryDetail__wrapper">
               <div className="categoryDetail__header">
-                {/*<div className="categoryDetail__image">
-                  <Icon width={100} name={Slugify(item.name)} />
-    </div>*/}
                 <h1 className="categoryDetail__title">{item.name}</h1>
               </div>
               <div>
