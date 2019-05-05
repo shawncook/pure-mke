@@ -136,7 +136,48 @@
       ]
     },
     {
-      
+      "name":"cans",
+      "is_recycleable": true,
+      "desc": "Aresol, Aluminium, and Steel Cans",
+      "body": "Aresol Cans Accepted at collection point in blue recycle cart. Instructions: Empty cans only. OK to leave labels on. Restrictions: NO needles or sharps. No gas or propane cans or tanks. Aluminum Cans Accepted at collection point in blue recycle cart. Instructions: Please rinse out cans. Restrictions: NO needles or sharps. No gas or propane cans or tanks.",
+      "categories":[
+        "metal"
+      ],
+      "tags":[ 
+      "spray",
+      "tin",
+      "food"]
+    },
+    {
+      "name":"Appliances",
+      "is_recyclable": true,
+      "desc": "Household appliances",
+      "body":"Appliances can be recycled at drop off locations but cannot be left curbside. If appliances are still in working condition, consider taking them to a donation center",
+      "categories":["metal",
+      "plastic",
+      "other"],
+      "tags":[
+        "microwave",
+        "refridgerator",
+        "oven", 
+        "washing machine",
+        "dryer",
+        "dishwasher",
+        "air conditioner"
+      ]
+    },
+    {
+      "name": "Paint",
+      "is_recyclable":false,
+      "desc": "Latex based or Oil based paint",
+      "body":"Oil based paint is not recycleable and cannot be thrown away. Latex based paint is not recycleable and can be thrown away in curbside garbage or taken to a drop off location. Please Consider taking paint to charity",
+      "categories":[
+        "other"
+      ],
+      "tags":[ 
+        "varnish",
+        "stain"
+      ]
     }
   ]
 }
