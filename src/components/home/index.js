@@ -35,10 +35,6 @@ class Home extends React.Component {
     });
   }
 
-  onSearchItemClick = searchItem => {
-    this.setState({ searchItem });
-  };
-
   render() {
     const { activeCategory, searchKeyword } = this.state;
     const categories = data.categories;
