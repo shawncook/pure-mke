@@ -20,3 +20,11 @@ body {
 .app__recyclable {
   list-style: none;
 }
+
+.linkButton {
+  background: $colorBackgroundInput;
+  border: 1px solid $colorBackgroundInputDark;
+  display: table;
+  margin: 0 auto;
+  padding: $spacerStandard;
+}

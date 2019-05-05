@@ -2,9 +2,10 @@ import React, { Fragment } from "react";
 import CategoryDetail from "../categoryDetail/index";
 import data from "../../data.json";
 import "../../app.scss";
+import Slugify from "../../utils/slugify";
 import ElasticSearch from "../elasticSearch/index";
 import Helmet from "react-helmet";
-import IconBattery from "../../img/icon-battery.svg";
+import Icon from '../../utils/icons';
 import './home.scss';
 
 class Home extends React.Component {
@@ -67,12 +68,7 @@ class Home extends React.Component {
                       <div
                         className="app__category-image"
                       >
-                        <img
-                          src={IconBattery}
-                          alt={item.name}
-                          height="60"
-                          width="60"
-                        />
+                        <Icon width={100} name={Slugify(item.name)} />
                       </div>
                       <h2
                         className="app__category-title"

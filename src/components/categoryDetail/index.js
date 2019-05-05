@@ -1,12 +1,8 @@
 import React, { Fragment } from "react";
 import Slugify from "../../utils/slugify";
 import "./categoryDetail.scss";
-
-import IconBattery from "../../img/icon-battery.svg";
-import IconCleaner from "../../img/icon-cleaner.svg";
-import IconOilSpill from "../../img/icon-oil-spill.svg";
-import IconResponsive from "../../img/icon-responsive.svg";
 import { ReactComponent as IconClose } from '../../img/icon-close.svg';
+import Icon from '../../utils/icons';
 import LinkButton from "../common/linkButton";
 
 
@@ -38,10 +34,7 @@ export default class CategoryDetail extends React.PureComponent {
           <div className="categoryDetail__wrapper">
             <div className="categoryDetail__header">
               <div className="categoryDetail__image">
-                <img
-                  src={IconBattery}
-                  alt={category.name}
-                />
+                <Icon width={100} name={Slugify(category.name)} />
               </div>
               <h1 className="categoryDetail__title">
                 {category.name}
