@@ -57,7 +57,8 @@
         "water",
         "clear",
         "drinking"
-      ]
+      ],
+      "location":["localBin","curbside"]
     },
     {
       "name": "Magazines",
@@ -69,7 +70,8 @@
       "tags": [
         "staples",
         "subscription"
-      ]
+      ],
+      "location":[]
     },
     {
       "name": "Battery",
@@ -84,7 +86,8 @@
         "car",
         "phone",
         "alkaline"
-      ]
+      ],
+      "location":["dropOff","retail"]
     },
     {
       "name": "Oil",
@@ -100,13 +103,14 @@
         "cooking",
         "vegetable",
         "frying"
-      ]
+      ],
+      "location":["dropOff"]
     },
     {
       "name": "Plastic Bag",
       "is_recyclable": true,
       "desc": "Plastic bags and other plastic films",
-      "body": "The City of Milwaukee does not accept plastic bags through its curbside recycling program. However Plastic Bags can be recycled at certain retail locations like Kohl’s, Pick n Save, Walmart, and Target. Accepted materials at such locations include plastic grocery bags, deflated packing pillows, produce bags, plastic wrap used to package toilet paper or paper towel, dry cleaning bags, and more! For a complete list of locations and information visit plasticfilmrecycling.org",
+      "body": "<div><div>The City of Milwaukee does not accept <span style='color: #339966;'><a style='color: #339966; href='/components/categories/plastic'>plastic</a></span> bags through its curbside recycling program.</div><div>&nbsp;</div><div>However, Plastic Bags can be recycled at certain retail locations like <span style='color: #339966;'><a style='color: #339966;' href='https://corporate.kohls.com/corporate-responsibility/sustainability'>Kohl&rsquo;s</a>, <a style='color: #339966;' href='###''>Pick n Save</a></span>, <span style='color: #339966;'><a style='color: #339966;' href='###'>Walmart</a></span>, and <span style='color: #339966;'><a style='color: #339966;' href='##'>Target</a></span>.</div><div>Accepted materials at such locations include plastic grocery bags, deflated packing pillows, produce bags, plastic wrap used to package toilet paper or paper towel, dry cleaning bags, and more! For a complete list of locations and information visit <span style='color: #339966;'><a style='color: #33996'href='plasticfilmrecyclin.org'>plasticfilmrecycling.org</a></span></div></div>",
       "categories": [
         "plastic"
       ],
@@ -119,7 +123,8 @@
         "shopping",
         "packaging",
         "katy perry"
-      ]
+      ],
+      "location":["bags"]
     },
     {
       "name": "Coffee Cup",
@@ -135,7 +140,7 @@
         "tea",
         "paper cup"
       ],
-      "location":[]
+      "location":["curbside","localBin"]
     },
     {
       "name": "cans",
